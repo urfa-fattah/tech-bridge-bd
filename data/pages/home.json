@@ -1,1 +1,59 @@
-
+{
+  "heroSlides": [
+    {
+      "id": 1,
+      "tag": "Direct China Air Cargo Import",
+      "tagBn": "সরাসরি চায়না থেকে এয়ার কার্গো প্রি-অর্ডার",
+      "title": "Original Tech Products, Smart Pre-Order Prices",
+      "titleBn": "অরিজিনাল গ্যাজেট, প্রি-অর্ডারে সেরা বাজারমূল্য",
+      "subtitle": "No middleman markup. 100% factory original products delivered to Bangladesh within 12–18 days.",
+      "subtitleBn": "লোকাল শপের এক্সট্রা মার্জিন ছাড়াই ১২-১৮ দিনে চায়না থেকে আপনার হাতে। কাস্টমসের কোনো গোপন খরচ নেই।",
+      "ctaPrimary": { "text": "Browse Pre-Orders", "textBn": "প্রি-অর্ডার শপ দেখুন", "link": "shop.html" },
+      "ctaSecondary": { "text": "Order on WhatsApp", "textBn": "হোয়াটসঅ্যাপে অর্ডার", "link": "whatsapp" },
+      "bgGradient": "linear-gradient(135deg, #0B1F3A 0%, #173865 100%)",
+      "badge": "Batch #84 Open (12 slots left)"
+    },
+    {
+      "id": 2,
+      "tag": "100% Transparent Landed Cost",
+      "tagBn": "স্বচ্ছ প্রাইসিং — কোনো গোপন ফি নেই",
+      "title": "Only 40% Advance, Rest on Arrival in BD",
+      "titleBn": "মাত্র ৪০% অ্যাডভান্স, বাকি ৬০% দেশে পৌঁছালে",
+      "subtitle": "Product price + Air shipping + Customs duty = One single final price shown upfront.",
+      "subtitleBn": "প্রোডাক্টের দাম + এয়ার ফ্রেইট + কাস্টমস ট্যাক্স সহ একটিমাত্র ক্লিয়ার প্রাইস। পৌঁছালে ক্যাশ অন ডেলিভারি।",
+      "ctaPrimary": { "text": "How Pre-Order Works", "textBn": "কীভাবে কাজ করে", "link": "how-it-works.html" },
+      "ctaSecondary": { "text": "Track Batch", "textBn": "লাইভ ব্যাচ ট্র্যাকিং", "link": "track.html" },
+      "bgGradient": "linear-gradient(135deg, #0B1F3A 0%, #0F2D52 50%, #FF6B1A 250%)",
+      "badge": "Replacement Guarantee"
+    },
+    {
+      "id": 3,
+      "tag": "AliExpress / Taobao / 1688 Concierge",
+      "tagBn": "যেকোনো চাইনিজ প্রোডাক্ট সরাসরি আনুন",
+      "title": "Can't Find What You Need? We Import It For You!",
+      "titleBn": "খুঁজে পাচ্ছেন না? লিংক দিন, আমরা এনে দেব!",
+      "subtitle": "Paste any Chinese tech link or send model name. Get instant price quotation in 10 minutes on WhatsApp.",
+      "subtitleBn": "যেকোনো প্রোডাক্টের লিংক বা নাম পাঠিয়ে দিন, ১০ মিনিটেই ফুল ল্যান্ডেড প্রাইস হিসাব করে জানাবো।",
+      "ctaPrimary": { "text": "Request Any Product", "textBn": "প্রোডাক্ট রিকোয়েস্ট করুন", "link": "request.html" },
+      "ctaSecondary": { "text": "Chat on WhatsApp", "textBn": "হোয়াটসঅ্যাপ চ্যাট", "link": "whatsapp" },
+      "bgGradient": "linear-gradient(135deg, #0B1F3A 0%, #1a3c6c 100%)",
+      "badge": "Custom Import Desk"
+    }
+  ],
+  "trustStats": [
+    { "icon": "bi-shield-check", "title": "100% Original", "titleBn": "১০০% অরিজিনাল", "desc": "Direct brand factory purchase" },
+    { "icon": "bi-wallet2", "title": "Safe 40% Advance", "titleBn": "নিরাপদ ৪০% অ্যাডভান্স", "desc": "Rest 60% on arrival in BD" },
+    { "icon": "bi-airplane", "title": "12-18 Days Air Cargo", "titleBn": "১২-১৮ দিনে এক্সপ্রেস ডেলিভারি", "desc": "Fast flight shipments" },
+    { "icon": "bi-arrow-repeat", "title": "7 Days Replacement", "titleBn": "৭ দিনের রিপ্লেসমেন্ট গ্যারান্টি", "desc": "Full peace of mind" }
+  ],
+  "featuredProductIds": [
+    "aud-0001",
+    "gam-0001",
+    "wat-0001",
+    "pow-0001",
+    "pc-0001",
+    "gam-0002",
+    "mob-0001",
+    "aud-0002"
+  ]
+}
