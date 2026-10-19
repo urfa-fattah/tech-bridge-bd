@@ -1,0 +1,174 @@
+[
+  {
+    "id": "gam-0001",
+    "slug": "attack-shark-x3-superlight-paw3395-mouse",
+    "name": "Attack Shark X3 Superlight 49g Tri-Mode Wireless Gaming Mouse",
+    "nameBn": "অ্যাটাক শার্ক এক্স৩ সুপারলাইট ৪৯ গ্রাম ট্রাই-মোড ওয়্যারলেস গেমিং মাউস",
+    "brand": "attack-shark",
+    "category": "gaming",
+    "subcategory": "gaming-mice",
+    "tags": ["paw3395", "superlight", "tri-mode", "gaming", "esports"],
+    "price": {
+      "base": 2500,
+      "shippingCustoms": 450,
+      "final": 2950,
+      "market": 4500,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 7
+    },
+    "variants": [
+      { "id": "white", "label": "Pure White", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&auto=format&fit=crop&q=80" },
+      { "id": "black", "label": "Matte Black", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&auto=format&fit=crop&q=80" },
+      { "id": "red", "label": "Flame Red Edition", "priceDiff": 100, "image": "https://images.unsplash.com/photo-1626218174358-7769486c4b79?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1626218174358-7769486c4b79?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "49 Grams Featherweight, PixArt PAW3395 Flagship Sensor (26000 DPI), Tri-Mode 2.4G/BT/Wired",
+    "shortBn": "মাত্র ৪৯ গ্রাম ওজন, ফ্ল্যাগশিপ পিক্সআর্ট PAW3395 সেন্সর (২৬,০০০ ডিপিআই), ট্রাই-মোড কানেক্টিভিটি",
+    "description": "One of the most praised budget esports mice on YouTube & Reddit. Engineered with PixArt's top-tier PAW3395 optical sensor, Kailh GM8.0 Black Mamba switches (80M clicks lifespan), and pure PTFE feet at an ultralight 49g non-honeycomb shell.",
+    "specs": {
+      "Sensor": "PixArt PAW3395 (26,000 DPI, 650 IPS, 50G Acceleration)",
+      "Weight": "49g ± 2g ultra-lightweight solid shell",
+      "Switches": "Kailh GM8.0 Black Mamba micro switches (80 Million Clicks)",
+      "Connectivity": "Tri-Mode: 2.4GHz Wireless, Bluetooth 5.2, Type-C Paracord Cable",
+      "Encoder": "TTC Gold dust-proof encoder",
+      "Battery Life": "Up to 200 hours in Bluetooth mode, 70 hours in 2.4GHz"
+    },
+    "highlights": [
+      "Esports standard PixArt PAW3395 optical sensor",
+      "Featherweight 49g without holes for clean grip",
+      "Crisp satisfying Kailh 80M click feel",
+      "Lag-free 1000Hz polling rate wireless receiver"
+    ],
+    "rating": 4.9,
+    "reviewCount": 51,
+    "badges": ["Pre-Order", "Esports Viral", "Staff Pick"],
+    "featured": true,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": "gam-0002",
+    "slug": "royal-kludge-r65-gasket-mechanical-keyboard",
+    "name": "Royal Kludge RK R65 Gasket Tri-Mode Mechanical Keyboard",
+    "nameBn": "রয়েল ক্লাজ আরকে আর৬৫ গ্যাসকেট ট্রাই-মোড মেকানিক্যাল কিবোর্ড",
+    "brand": "royal-kludge",
+    "category": "gaming",
+    "subcategory": "mechanical-keyboards",
+    "tags": ["gasket-mount", "rgb", "hot-swap", "mechanical", "volume-knob"],
+    "price": {
+      "base": 3900,
+      "shippingCustoms": 750,
+      "final": 4650,
+      "market": 6800,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 5
+    },
+    "variants": [
+      { "id": "creamy-switch", "label": "Chartreuse Linear Switches (Creamy)", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format&fit=crop&q=80" },
+      { "id": "silver-switch", "label": "Fast Silver Speed Switches (Gaming)", "priceDiff": 150, "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "True Gasket Structure with 5-Layer Sound Dampening, CNC Metal Knob, Hot-Swappable RGB",
+    "shortBn": "ট্রু গ্যাসকেট স্ট্রাকচার, ৫-লেয়ার সাউন্ড ড্যাম্পেনিং, সিএনসি মেটাল ভলিউম নব, হট-সোয়াপ",
+    "description": "The RK R65 features pure enthusiast-grade keyboard acoustics right out of the box! Built with PORON sound-absorbing sandwich foam, IXPE switch pads, PET sound-enhancing pad, silicone bottom cushion, and factory pre-lubed linear switches for that deep 'thocky' marbly sound profile.",
+    "specs": {
+      "Layout": "65% Compact (66 Keys + 1 CNC Aluminum Volume Knob)",
+      "Mounting Structure": "Gasket-Mounted with Flexible PC Plate",
+      "Sound Dampening": "5-layer acoustic package (Poron + IXPE + PET + Silicone)",
+      "Hot-Swap": "Full 3-Pin / 5-Pin Hot Swappable PCB",
+      "Backlight": "South-Facing RGB with 18 dynamic lighting modes",
+      "Keycaps": "Double-shot PBT Cherry Profile Keycaps"
+    },
+    "highlights": [
+      "Deep creamy marble acoustic profile without custom modding",
+      "Smooth CNC aluminum metal rotary volume knob",
+      "Hot-swap ready for any custom mechanical switches",
+      "Premium double-shot PBT keycaps resist shine"
+    ],
+    "rating": 4.9,
+    "reviewCount": 34,
+    "badges": ["Pre-Order", "Thock King", "Bestseller"],
+    "featured": true,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-10"
+  },
+  {
+    "id": "gam-0003",
+    "slug": "8bitdo-ultimate-2c-hall-effect-wireless-controller",
+    "name": "8BitDo Ultimate 2C Wireless Controller (Hall Effect Sticks)",
+    "nameBn": "এইটবিটডো আলটিমেট ২সি ওয়্যারলেস কন্ট্রোলার (হল ইফেক্ট)",
+    "brand": "8bitdo",
+    "category": "gaming",
+    "subcategory": "gamepads",
+    "tags": ["hall-effect", "no-stick-drift", "gamepad", "pc", "android"],
+    "price": {
+      "base": 2400,
+      "shippingCustoms": 450,
+      "final": 2850,
+      "market": 4200,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 10
+    },
+    "variants": [
+      { "id": "mint", "label": "Mint Green", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?w=600&auto=format&fit=crop&q=80" },
+      { "id": "purple", "label": "Lilac Purple", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "Zero Stick-Drift Hall Effect Joysticks & Triggers, 1000Hz Polling Rate, Extra R4/L4 Bumpers",
+    "shortBn": "জিরো স্টিক-ড্রিফট হল ইফেক্ট জয়স্টিক ও ট্রিগার, ১০০০ হার্টজ পোলিং রেট, এক্সট্রা এল৪/আর৪ বাটন",
+    "description": "Never experience joystick drift again. The 8BitDo Ultimate 2C packs electromagnetic Hall Effect joysticks and triggers, 1000Hz esports polling rate for instant reflex reaction, ultra-tactile D-Pad, and seamless 2.4G & Bluetooth connectivity.",
+    "specs": {
+      "Joysticks & Triggers": "Electromagnetic Hall Effect (Wear-Free, Zero Drift)",
+      "Polling Rate": "1000Hz Ultra-Low Latency in 2.4G & Wired modes",
+      "Extra Buttons": "Dedicated R4 / L4 custom shoulder bumpers",
+      "Compatibility": "Windows PC 10/11, Android, Raspberry Pi, Steam Deck",
+      "Vibration": "Dual asymmetric rumble vibration motors"
+    },
+    "highlights": [
+      "Permanent immunity from analog stick drift",
+      "1000Hz tournament grade low input lag",
+      "Extra micro-switch shoulder bumpers",
+      "Ergonomic matte texture grip"
+    ],
+    "rating": 4.8,
+    "reviewCount": 27,
+    "badges": ["Pre-Order", "Zero Drift"],
+    "featured": false,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-09"
+  }
+]

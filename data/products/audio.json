@@ -1,1 +1,118 @@
-
+[
+  {
+    "id": "aud-0001",
+    "slug": "moondrop-space-travel-anc-tws",
+    "name": "Moondrop Space Travel ANC Wireless TWS",
+    "nameBn": "মুনড্রপ স্পেস ট্রাভেল এএনসি ওয়্যারলেস ইয়ারবাডস",
+    "brand": "moondrop",
+    "category": "audio",
+    "subcategory": "tws-earbuds",
+    "tags": ["anc", "bluetooth", "audiophile", "gaming", "low-latency"],
+    "price": {
+      "base": 1850,
+      "shippingCustoms": 400,
+      "final": 2250,
+      "market": 3200,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 8
+    },
+    "variants": [
+      { "id": "black", "label": "Space Black", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&auto=format&fit=crop&q=80" },
+      { "id": "white", "label": "Transparent White", "priceDiff": 50, "image": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "Single-feedforward 35dB ANC, 13mm Titanium Dome, 55ms Low Latency Game Mode",
+    "shortBn": "৩৫ ডেসিবেল অ্যাক্টিভ নয়েজ ক্যান্সেলেশন, ১৩মিমি টাইটানিয়াম ড্রাইভার, ৫৫মিমি লো-লেটেন্সি গেমিং মোড",
+    "description": "The Moondrop Space Travel redefines budget audiophile wireless earbuds. Engineered with a specialized 13mm enhanced titanium dome diaphragm dynamic driver tuned to Moondrop's target acoustic response. Offers seamless 35dB hybrid ANC, transparency mode, and ultra-low latency for competitive gaming.",
+    "specs": {
+      "Driver": "13mm Titanium Dome Composite Diaphragm",
+      "Noise Cancellation": "35dB Active Noise Cancellation + Transparency Mode",
+      "Bluetooth": "Version 5.3 (SBC / AAC)",
+      "Battery Life": "4 Hours (Earbuds) + 12 Hours (Charging Case)",
+      "Charging Port": "Type-C Fast Charging",
+      "Gaming Latency": "55ms Ultra-Low Latency Mode",
+      "Warranty": "7-day replacement guarantee against defects"
+    },
+    "highlights": [
+      "Moondrop Audiophile Tuning with deep textured bass",
+      "35dB Active Noise Cancelling for busy commute",
+      "Futuristic Semi-Transparent Mecha Design",
+      "55ms ultra low-latency gaming toggle"
+    ],
+    "rating": 4.8,
+    "reviewCount": 42,
+    "badges": ["Pre-Order", "Hot Seller", "Top Audiophile"],
+    "featured": true,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-10"
+  },
+  {
+    "id": "aud-0002",
+    "slug": "qcy-melobuds-pro-anc-hi-res",
+    "name": "QCY MeloBuds Pro Hi-Res LDAC ANC Earbuds",
+    "nameBn": "কিউসিওয়াই মেলোবাডস প্রো হাই-রেস এএনসি ইয়ারবাডস",
+    "brand": "qcy",
+    "category": "audio",
+    "subcategory": "tws-earbuds",
+    "tags": ["ldac", "hi-res", "anc", "bluetooth", "multipoint"],
+    "price": {
+      "base": 2400,
+      "shippingCustoms": 450,
+      "final": 2850,
+      "market": 4200,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 11
+    },
+    "variants": [
+      { "id": "black", "label": "Midnight Black", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=600&auto=format&fit=crop&q=80" },
+      { "id": "gold", "label": "Champagne Gold", "priceDiff": 50, "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "Hi-Res Audio Certified with LDAC, 46dB Adaptive ANC, 6-Mic AI Clear Call",
+    "shortBn": "হাই-রেস সার্টিফায়েড এলডিএসি কোডেক, ৪৬ ডেসিবেল অ্যাডাপ্টিভ এএনসি, ৬-মাইক এআই কল ক্লিয়ারিটি",
+    "description": "Equipped with gold standard LDAC decoding and 46dB hybrid adaptive noise cancelling. MeloBuds Pro brings flagship-tier audio transmission at 990kbps bitrates to budget lovers. Multipoint connection connects laptop and phone effortlessly.",
+    "specs": {
+      "Audio Codec": "LDAC, AAC, SBC (Hi-Res Audio Wireless Certified)",
+      "ANC Level": "Up to 46dB Hybrid Adaptive ANC",
+      "Mics": "6 Microphones with AI Wind-noise Reduction",
+      "Battery Life": "Up to 34 hours with charging case",
+      "Connectivity": "Bluetooth 5.3 Multipoint Dual-Device",
+      "App Support": "QCY Custom EQ & Sound Effect App"
+    },
+    "highlights": [
+      "High resolution 990kbps LDAC decoding",
+      "Flagship 46dB Hybrid ANC kills traffic noise",
+      "Dual device connection for Laptop & Smartphone",
+      "Crystal clear 6-mic AI voice algorithm"
+    ],
+    "rating": 4.7,
+    "reviewCount": 29,
+    "badges": ["Pre-Order", "Hi-Res Audio"],
+    "featured": true,
+    "new": false,
+    "status": "active",
+    "createdAt": "2026-10-08"
+  }
+]

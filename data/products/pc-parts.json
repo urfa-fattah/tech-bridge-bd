@@ -1,0 +1,114 @@
+[
+  {
+    "id": "pc-0001",
+    "slug": "thermalright-peerless-assassin-120-se-cpu-cooler",
+    "name": "Thermalright Peerless Assassin 120 SE Dual Tower CPU Cooler",
+    "nameBn": "থার্মালরাইট পিয়ারলেস অ্যাসাসিন ১২০ এসই ডুয়াল টাওয়ার সিপিইউ কুলার",
+    "brand": "thermalright",
+    "category": "pc-parts",
+    "subcategory": "cpu-coolers",
+    "tags": ["cpu-cooler", "dual-tower", "am5", "lga1700", "silent"],
+    "price": {
+      "base": 3300,
+      "shippingCustoms": 950,
+      "final": 4250,
+      "market": 6200,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 6
+    },
+    "variants": [
+      { "id": "standard-black", "label": "Grey Heatsink + Black TL-C12C Fans", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format&fit=crop&q=80" },
+      { "id": "argb-black", "label": "ARGB Lighting Version", "priceDiff": 200, "image": "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "6x 6mm AGHP Anti-Gravity Heatpipes, Dual TL-C12C PWM Fans, 265W TDP Monster Cooling",
+    "shortBn": "৬টি ৬মিমি অ্যান্টি-গ্র্যাভিটি হিটপাইপ, ডুয়াল পিডব্লিউএম ফ্যান, ২৬৫ ওয়াট টিডিপি কুলিং পারফরম্যান্স",
+    "description": "Widely known in the PC building community as the undisputed king of price-to-performance air coolers. Competes directly with $100 flagship coolers while maintaining whisper quiet acoustics. Includes full mounting kit for Intel LGA1700/1851 & AMD AM5/AM4.",
+    "specs": {
+      "Heatpipes": "6x 6mm AGHP Gen 4 Anti-Gravity Nickel-Plated Copper Heatpipes",
+      "Fans": "Dual 120mm TL-C12C S-FDB Bearing PWM Fans (1550 RPM, 66.17 CFM)",
+      "Cooling Capacity": "Up to 265W TDP (Cools Core i7/i9 & Ryzen 7/9 effortlessly)",
+      "Socket Compatibility": "Intel LGA 1700 / 1851 / 1200 / 115X | AMD AM5 / AM4",
+      "Height": "155mm (Fits inside 99% of standard Mid-Tower PC cases)"
+    },
+    "highlights": [
+      "Performs on par with $100 liquid AIO coolers",
+      "Patented 4th gen anti-gravity copper heatpipes",
+      "Complete mounting hardware for modern Intel & AMD sockets",
+      "Ultra-reliable S-FDB hydraulic bearing fans"
+    ],
+    "rating": 5.0,
+    "reviewCount": 46,
+    "badges": ["Pre-Order", "Benchmark King", "PC Essential"],
+    "featured": true,
+    "new": false,
+    "status": "active",
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": "pc-0002",
+    "slug": "colorful-cn600-pro-1tb-pcie4-nvme-ssd",
+    "name": "Colorful CN600 PRO 1TB M.2 PCIe Gen4 NVMe SSD (5000MB/s)",
+    "nameBn": "কালারফুল সিএন৬০০ প্রো ১টিবি পিসিআইই জেন৪ এসএসডি",
+    "brand": "colorful",
+    "category": "pc-parts",
+    "subcategory": "nvme-ssd",
+    "tags": ["ssd", "nvme", "pcie-gen4", "high-speed", "storage"],
+    "price": {
+      "base": 4800,
+      "shippingCustoms": 400,
+      "final": 5200,
+      "market": 7400,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 8
+    },
+    "variants": [
+      { "id": "1tb", "label": "1TB Capacity (5000MB/s)", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&auto=format&fit=crop&q=80" },
+      { "id": "2tb", "label": "2TB Capacity (5200MB/s)", "priceDiff": 3600, "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "PCIe Gen4x4 Interface, Up to 5000MB/s Read & 4500MB/s Write, Graphene Heatspreader",
+    "shortBn": "পিসিআইই জেন৪x৪ ইন্টারফেস, ৫০০০ মেগাবাইট/সেকেন্ড রিড স্পিড, গ্রাফিন হিটস্প্রেডার",
+    "description": "Blazing fast NVMe M.2 2280 solid state drive. Drastically cuts down game load times and 4K video rendering bottlenecks. Comes equipped with a nano-composite copper/graphene thermal sticker for low running temperatures.",
+    "specs": {
+      "Interface": "PCIe Gen 4.0 x4, NVMe 1.4",
+      "Read Speed": "Up to 5,000 MB/s",
+      "Write Speed": "Up to 4,500 MB/s",
+      "NAND Flash": "3D TLC NAND Flash Memory",
+      "TBW Endurance": "640 TBW (1TB) / 1280 TBW (2TB)",
+      "Form Factor": "M.2 2280"
+    },
+    "highlights": [
+      "5000MB/s ultra-fast PCIe Gen4 speeds",
+      "High endurance 3D TLC NAND architecture",
+      "Graphene composite heatsink keeps temps cool",
+      "Compatible with PS5 Console and Desktop PCs"
+    ],
+    "rating": 4.8,
+    "reviewCount": 21,
+    "badges": ["Pre-Order", "Gen4 Speed"],
+    "featured": false,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-09"
+  }
+]

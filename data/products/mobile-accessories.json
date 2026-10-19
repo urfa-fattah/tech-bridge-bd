@@ -1,0 +1,107 @@
+[
+  {
+    "id": "mob-0001",
+    "slug": "ugreen-foldable-aluminum-desk-stand",
+    "name": "Ugreen Premium Foldable Aluminum Desk Stand for Phone & iPad",
+    "nameBn": "ইউগ্রিন প্রিমিয়াম ফোল্ডেবল অ্যালুমিনিয়াম ডেস্ক স্ট্যান্ড",
+    "brand": "ugreen",
+    "category": "mobile-accessories",
+    "subcategory": "magnetic-stands",
+    "tags": ["stand", "aluminum", "ipad-stand", "desk-setup"],
+    "price": {
+      "base": 1100,
+      "shippingCustoms": 250,
+      "final": 1350,
+      "market": 1950,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 15
+    },
+    "variants": [
+      { "id": "space-grey", "label": "Space Grey Anodized", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&auto=format&fit=crop&q=80" },
+      { "id": "silver", "label": "Silver Matte", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "Dual-Axis 180° Angle Adjustment, CNC Machined Aerospace Aluminum, Anti-Slip Silicone Pads",
+    "shortBn": "ডুয়াল-অ্যাক্সিস ১৮০° অ্যাঙ্গেল অ্যাডজাস্টমেন্ট, এরোস্পেস অ্যালুমিনিয়াম বডি, অ্যান্টি-স্লিপ সিলিকন",
+    "description": "Crafted from heavy-duty aerospace aluminum alloy with smooth chamfered edges. Dual hinges let you adjust the viewing angle freely for video calls, reading, or iPad sidecar drawing without wobble or tipping.",
+    "specs": {
+      "Material": "Solid Anodized CNC Aluminum Alloy + Silicone",
+      "Compatibility": "All 4.7\" to 12.9\" Smartphones & Tablets (iPhone, iPad, Galaxy Tab)",
+      "Portability": "Fully foldable pocket design (Thickness: 21mm when folded)",
+      "Weight": "210 grams balanced center-of-gravity"
+    },
+    "highlights": [
+      "Premium heavy metal feel that doesn't tip over",
+      "Dual-axis adjustment for perfect eye-level posture",
+      "Protective rubber lining prevents phone scratches"
+    ],
+    "rating": 4.8,
+    "reviewCount": 35,
+    "badges": ["Pre-Order", "Desk Essential"],
+    "featured": true,
+    "new": false,
+    "status": "active",
+    "createdAt": "2026-10-08"
+  },
+  {
+    "id": "mob-0002",
+    "slug": "black-shark-funcooler-3-pro-phone-cooler",
+    "name": "Black Shark FunCooler 3 Pro 20W Semiconductor Gaming Cooler",
+    "nameBn": "ব্ল্যাক শার্ক ফানকুলার ৩ প্রো ২০ ওয়াট মোবাইল কুলার",
+    "brand": "baseus",
+    "category": "mobile-accessories",
+    "subcategory": "phone-coolers",
+    "tags": ["mobile-gaming", "cooler", "pubg", "freefire", "rgb"],
+    "price": {
+      "base": 2800,
+      "shippingCustoms": 450,
+      "final": 3250,
+      "market": 4800,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 8
+    },
+    "variants": [
+      { "id": "black", "label": "Mecha Black RGB", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "20W Ultra-High Power TEC Semiconductor Cooling, Instant 30°C Temp Drop, Customizable RGB",
+    "shortBn": "২০ ওয়াট হাই-পাওয়ার টিইসি সেমিকন্ডাক্টর কুলিং, নিমেষেই ৩০° সেলসিয়াস পর্যন্ত তাপমাত্রা হ্রাস, আরজিবি",
+    "description": "Essential gear for competitive PUBG Mobile, Free Fire, and Warzone Mobile players in Bangladesh heat. Drops phone back-glass temperature below freezing in under a minute, eliminating thermal throttling and FPS drops.",
+    "specs": {
+      "Cooling Tech": "20W Thermoelectric TEC Semiconductor Peltier Cooling Plate",
+      "Fan Speed": "7-Blade 7200 RPM High Velocity Fan",
+      "App Control": "Shark Arsenal App (Temperature monitor & RGB lighting presets)",
+      "Clamp Width": "Fits phones 67mm - 88mm wide"
+    },
+    "highlights": [
+      "Maintains locked 90/120 FPS in heavy games",
+      "Drops phone temperatures below room temp in 30 seconds",
+      "Customizable gaming RGB lighting via smartphone app"
+    ],
+    "rating": 4.9,
+    "reviewCount": 26,
+    "badges": ["Pre-Order", "Gaming Pro"],
+    "featured": false,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-10"
+  }
+]

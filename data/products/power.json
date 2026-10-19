@@ -1,0 +1,110 @@
+[
+  {
+    "id": "pow-0001",
+    "slug": "baseus-gan5-pro-65w-fast-charger",
+    "name": "Baseus GaN5 Pro 65W Fast Charger (2x Type-C + 1x USB-A)",
+    "nameBn": "বেসিউস জিএএন৫ প্রো ৬৫ ওয়াট ফাস্ট চার্জার",
+    "brand": "baseus",
+    "category": "power",
+    "subcategory": "gan-chargers",
+    "tags": ["gan5", "65w", "fast-charging", "type-c", "laptop-charger"],
+    "price": {
+      "base": 1950,
+      "shippingCustoms": 350,
+      "final": 2300,
+      "market": 3400,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 12
+    },
+    "variants": [
+      { "id": "black", "label": "Classic Black (Includes 100W Cable)", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600&auto=format&fit=crop&q=80" },
+      { "id": "white", "label": "Moon White (Includes 100W Cable)", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1622445262464-84b1456045b6?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1622445262464-84b1456045b6?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "Upgraded 5th Gen GaN Tech, 65W Power Delivery for MacBook & Windows Laptops, 3 Ports Simultaneous",
+    "shortBn": "আপগ্রেডেড ৫ম প্রজন্মের জিএএন টেকনোলজি, ম্যাকবুক ও ল্যাপটপের জন্য ৬৫ ওয়াট পিডি, একসাথে ৩টি ডিভাইস",
+    "description": "5th generation Gallium Nitride (GaN) technology makes this adapter 55% smaller than traditional laptop power bricks. Smart BPS II power distribution intelligently splits current between laptop, phone, and tablet without disconnecting or surging.",
+    "specs": {
+      "Total Output": "65W Max Power Delivery",
+      "Ports": "2x USB Type-C + 1x USB-A",
+      "Fast Charge Protocols": "PD 3.0, QC 4.0+, PPS 45W (Samsung Super Fast), AFC, FCP",
+      "Cable Included": "Complimentary Baseus 100W Type-C to Type-C 1m cable",
+      "Safety": "BCT Thermal Cooling Technology & 8-point protection"
+    },
+    "highlights": [
+      "Powers MacBook Pro/Air and Dell XPS at full 65W speed",
+      "Charges iPhone 15/16 from 0 to 50% in 25 minutes",
+      "Includes genuine 100W E-marker charging cable in box",
+      "55% smaller compact footprint fits easily in pockets"
+    ],
+    "rating": 4.9,
+    "reviewCount": 43,
+    "badges": ["Pre-Order", "Bestseller", "GaN5 Tech"],
+    "featured": true,
+    "new": false,
+    "status": "active",
+    "createdAt": "2026-10-09"
+  },
+  {
+    "id": "pow-0002",
+    "slug": "ugreen-nexode-100w-4-port-gan-desktop-charger",
+    "name": "Ugreen Nexode 100W 4-Port GaN Fast Charger",
+    "nameBn": "ইউগ্রিন নেক্সোড ১০০ ওয়াট ৪-পোর্ট ফাস্ট চার্জার",
+    "brand": "ugreen",
+    "category": "power",
+    "subcategory": "gan-chargers",
+    "tags": ["100w", "ugreen", "nexode", "macbook-pro", "gan-fast"],
+    "price": {
+      "base": 4200,
+      "shippingCustoms": 650,
+      "final": 4850,
+      "market": 6900,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 7
+    },
+    "variants": [
+      { "id": "space-grey", "label": "Space Grey Metallic", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "100W Single Port Max Output, 3x Type-C + 1x USB-A, Charges 2 Laptops Simultaneously",
+    "shortBn": "একক পোর্টে ১০০ ওয়াট ম্যাক্স আউটপুট, ৩টি টাইপ-সি ও ১টি ইউএসবি-এ পোর্ট, একসাথে ২টি ল্যাপটপ চার্জিং",
+    "description": "The desktop powerhouse from Ugreen. Supports up to 100W Power Delivery to fast charge a MacBook Pro 16-inch to 50% in only 30 minutes. Four ports allow power users to clean their desks and replace 4 separate power bricks with one unit.",
+    "specs": {
+      "Total Power": "100W Max Dynamic Allocation",
+      "Ports": "3x USB-C + 1x USB-A",
+      "Compatibility": "MacBook Pro, iPhone, iPad, Galaxy S24 Ultra, ThinkPad",
+      "Protection": "Thermal Guard dynamic heat monitoring checks temp 800 times/sec"
+    },
+    "highlights": [
+      "Charges MacBook Pro 16\" at full 100W speed",
+      "Clean one-plug setup for entire workstation",
+      "Active Thermal Guard sensor prevents heat throttling"
+    ],
+    "rating": 4.9,
+    "reviewCount": 31,
+    "badges": ["Pre-Order", "100W Flagship"],
+    "featured": false,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-10"
+  }
+]

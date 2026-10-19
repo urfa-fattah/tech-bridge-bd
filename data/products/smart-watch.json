@@ -1,0 +1,115 @@
+[
+  {
+    "id": "wat-0001",
+    "slug": "haylou-solar-pro-amoled-smart-watch",
+    "name": "Haylou Solar Pro 1.43\" AMOLED Calling Smart Watch",
+    "nameBn": "হেইলো সোলার প্রো ১.৪৩\" অ্যামোলেড কলিং স্মার্ট ওয়াচ",
+    "brand": "haylou",
+    "category": "smart-watch",
+    "subcategory": "amoled-watch",
+    "tags": ["amoled", "bluetooth-calling", "heart-rate", "sp02", "sports"],
+    "price": {
+      "base": 3100,
+      "shippingCustoms": 550,
+      "final": 3650,
+      "market": 5200,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 6
+    },
+    "variants": [
+      { "id": "black", "label": "Metallic Black", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&auto=format&fit=crop&q=80" },
+      { "id": "silver", "label": "Titanium Silver", "priceDiff": 100, "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "1.43'' Ultra-Clear AMOLED Display, Bluetooth HD Calling, 100+ Sports Modes, IP68 Waterproof",
+    "shortBn": "১.৪৩ ইঞ্চি আল্ট্রা-ক্লিয়ার অ্যামোলেড ডিসপ্লে, ব্লুটুথ এইচডি কলিং, ১০০+ স্পোর্টস মোড, আইপি৬৮ ওয়াটারপ্রুফ",
+    "description": "The Haylou Solar Pro sports an exquisite anti-scratch metallic rotating bezel, a vibrant 1.43-inch AMOLED high-res panel with Always-On Display (AOD). Features one-tap Bluetooth calling with noise cancellation microphone and military-grade durability.",
+    "specs": {
+      "Display": "1.43\" AMOLED 466*466 resolution, Always-On Display",
+      "Calling": "High-Definition Bluetooth Phone Calling with Dialpad",
+      "Health Sensors": "24H Heart Rate, SpO2 Blood Oxygen, Sleep & Stress Monitor",
+      "Battery": "Up to 7 Days (Heavy Use), 20 Days (Basic Standby)",
+      "Water Resistance": "IP68 Certified Dust & Water Proof",
+      "Frame Material": "Zinc Alloy Anti-Impact Metallic Body"
+    },
+    "highlights": [
+      "Retina grade 1.43\" AMOLED with vivid color contrast",
+      "Direct clear wrist calling with phonebook sync",
+      "Robust metallic body built for daily grind",
+      "All-day health & sleep tracking metrics"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "badges": ["Pre-Order", "Best AMOLED", "Top Pick"],
+    "featured": true,
+    "new": true,
+    "status": "active",
+    "createdAt": "2026-10-09"
+  },
+  {
+    "id": "wat-0002",
+    "slug": "amazfit-bip-5-unity-smart-watch",
+    "name": "Amazfit Bip 5 Unity 1.91\" Smart Watch with Zepp OS",
+    "nameBn": "অ্যামাজফিট বিপ ৫ ইউনিটি ১.৯১\" স্মার্ট ওয়াচ",
+    "brand": "amazfit",
+    "category": "smart-watch",
+    "subcategory": "amoled-watch",
+    "tags": ["zepp-os", "large-screen", "fitness", "gps", "apps"],
+    "price": {
+      "base": 4200,
+      "shippingCustoms": 600,
+      "final": 4800,
+      "market": 6900,
+      "currency": "BDT"
+    },
+    "preorder": {
+      "type": "preorder",
+      "etaDays": [12, 16],
+      "advancePercent": 40,
+      "batch": "BATCH-2026-10-25",
+      "slotsLeft": 9
+    },
+    "variants": [
+      { "id": "charcoal", "label": "Charcoal Grey", "priceDiff": 0, "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80" },
+      { "id": "grey", "label": "Stainless Silver", "priceDiff": 150, "image": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=600&auto=format&fit=crop&q=80" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=600&auto=format&fit=crop&q=80"
+    ],
+    "video": "",
+    "short": "Massive 1.91\" Display, Zepp OS 3.0 App Ecosystem, 120+ Sports Modes & Bluetooth Calls",
+    "shortBn": "বিশাল ১.৯১\" ডিসপ্লে, জেপ ওএস ৩.০ অ্যাপস, ১২০+ স্পোর্টস মোড ও ব্লুটুথ কলিং",
+    "description": "Super-sized 1.91-inch display with rich colors and responsive touch. Powered by modern Zepp OS 3.0 allowing downloadable mini apps and games. Stainless steel bezel delivers executive aesthetics with comprehensive biometric tracking.",
+    "specs": {
+      "Display": "1.91\" High Resolution IPS Touchscreen",
+      "Operating System": "Zepp OS 3.0 with mini-app ecosystem",
+      "Battery": "300mAh, up to 11 days typical battery life",
+      "Microphone & Speaker": "Yes, Bluetooth calling & Alexa Voice Assistant",
+      "Sports Tracking": "120+ Sports modes with auto workout detection"
+    },
+    "highlights": [
+      "Ultra-wide 1.91 inch curved display",
+      "Downloadable smart apps via Zepp OS",
+      "Premium stainless steel frame edge",
+      "Long lasting 11-day battery endurance"
+    ],
+    "rating": 4.7,
+    "reviewCount": 19,
+    "badges": ["Pre-Order", "Zepp OS"],
+    "featured": false,
+    "new": false,
+    "status": "active",
+    "createdAt": "2026-10-06"
+  }
+]
