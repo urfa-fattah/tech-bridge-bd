@@ -1,0 +1,115 @@
+:root {
+  /* Premium Tech Palette (Light Mode Default) */
+  --color-primary: #0A1C33;
+  --color-primary-light: #153258;
+  --color-primary-dark: #050E1A;
+  --color-accent: #FF5A1F;
+  --color-accent-light: #FF7843;
+  --color-accent-soft: rgba(255, 90, 31, 0.08);
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1EBE5D;
+  --color-whatsapp-soft: rgba(37, 211, 102, 0.12);
+  
+  --color-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F1F5F9;
+  --color-surface-hover: #E2E8F0;
+  --color-border: #E2E8F0;
+  --color-border-light: #F1F5F9;
+  
+  --color-text-main: #0F172A;
+  --color-text-muted: #64748B;
+  --color-text-light: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+
+  --color-card-bg: #FFFFFF;
+  --color-header-bg: rgba(255, 255, 255, 0.94);
+  --color-subnav-bg: #0A1C33;
+  --color-subnav-text: #FFFFFF;
+  --color-footer-bg: #050E1A;
+  --color-input-bg: #F1F5F9;
+  --color-dropdown-bg: #FFFFFF;
+
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-info: #0EA5E9;
+
+  /* Typography */
+  --font-body: 'Inter', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-bengali: 'Hind Siliguri', 'Inter', sans-serif;
+
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Shadows - Refined elevation */
+  --shadow-xs: 0 1px 2px rgba(10, 28, 51, 0.04);
+  --shadow-sm: 0 2px 6px rgba(10, 28, 51, 0.05);
+  --shadow-md: 0 8px 20px rgba(10, 28, 51, 0.07);
+  --shadow-lg: 0 16px 36px rgba(10, 28, 51, 0.09);
+  --shadow-xl: 0 24px 50px rgba(10, 28, 51, 0.13);
+  --shadow-whatsapp: 0 8px 24px rgba(37, 211, 102, 0.35);
+
+  /* Transitions */
+  --transition-fast: 140ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 380ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout Dimensions */
+  --header-height: 72px;
+  --bottom-nav-height: 64px;
+}
+
+/* ============================================================
+   ADVANCED DARK MODE PALETTE (Ultra-Crisp & High-Contrast)
+   ============================================================ */
+[data-theme="dark"] {
+  --color-primary: #0B1426;
+  --color-primary-light: #16243D;
+  --color-primary-dark: #040812;
+  --color-accent: #FF5A1F;
+  --color-accent-light: #FF7843;
+  --color-accent-soft: rgba(255, 90, 31, 0.18);
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1EBE5D;
+  --color-whatsapp-soft: rgba(37, 211, 102, 0.20);
+  
+  --color-bg: #070B14;
+  --color-surface: #0E1626;
+  --color-surface-alt: #162238;
+  --color-surface-hover: #22324F;
+  --color-border: #1E2D47;
+  --color-border-light: #131E31;
+  
+  --color-text-main: #F8FAFC;
+  --color-text-muted: #94A3B8;
+  --color-text-light: #64748B;
+  --color-text-inverse: #070B14;
+
+  --color-card-bg: #0E1626;
+  --color-header-bg: rgba(11, 19, 34, 0.90);
+  --color-subnav-bg: #060B14;
+  --color-subnav-text: #E2E8F0;
+  --color-footer-bg: #04070F;
+  --color-input-bg: #162238;
+  --color-dropdown-bg: #0E1626;
+
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.8);
+  --shadow-xl: 0 24px 55px rgba(0, 0, 0, 0.9);
+}
