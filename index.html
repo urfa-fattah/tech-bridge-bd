@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechBridge BD — China Direct Tech Pre-Order Store</title>
+  <meta name="description" content="চায়না থেকে সরাসরি আসল গ্যাজেট, মেকানিক্যাল কিবোর্ড, পিসি পার্টস প্রি-অর্ডারে সেরা বাজারমূল্যে কিনুন। কোনো গোপন কাস্টমস ফি নেই।">
+  <link rel="icon" href="assets/img/logo.png">
+
+  <!-- Resource Preconnect & DNS-Prefetch for Maximum Speed -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="icon" href="assets/img/logo.png">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Dismissable Announcement Pop-Up Capsule -->
+  <!-- Top Dismissable Announcement Pop-Up Capsule -->
+<aside class="announcement-popup" id="announcementPopup" role="alert" aria-label="Official Announcement">
+  <div class="announcement-popup-inner">
+    <span class="announcement-live-indicator" aria-hidden="true"></span>
+    <span class="announcement-text" data-i18n="announcement_text">
+      চীন থেকে সরাসরি আসল টেক প্রি-অর্ডার চলছে! ১২-১৮ দিনে এয়ার কার্গো ডেলিভারি!
+    </span>
+    <a href="offers.html" class="announcement-link" data-i18n="announcement_link">
+      স্পেশাল ৬০% অফার দেখুন <i class="bi bi-arrow-right-short"></i>
+    </a>
+    <button type="button" class="announcement-popup-close" id="announcementCloseBtn" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</aside>
+
+  <!-- Sticky Main Header -->
+  <!-- Sticky Main Header -->
+  <!-- Sticky Main Header Component -->
+<header class="site-header">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 gap-3">
+      
+      <!-- Mobile Menu Toggle & Brand Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn btn-outline-custom d-lg-none p-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenuOffcanvas" aria-label="Toggle menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+
+        <a href="index.html" class="header-brand">
+          <img src="assets/img/logo.png" alt="TechBridge BD Logo" class="brand-logo-img">
+          <div class="brand-text-wrap">
+            <span class="brand-name">Tech<span>Bridge</span></span>
+            <span class="brand-subtitle d-block">China Direct Pre-Order</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Search Bar with Live Auto-Complete Dropdown -->
+      <div class="header-search-container d-none d-md-block">
+        <input type="text" class="header-search-input" placeholder="কিবোর্ড, মাউস, অডিও, স্মার্ট গ্যাজেট খুঁজুন..." data-i18n-placeholder="search_placeholder" aria-label="Search tech products">
+        <button type="button" class="header-search-btn" aria-label="Search submit">
+          <i class="bi bi-search"></i>
+        </button>
+        <div class="live-search-dropdown" id="globalLiveSearchDropdown"></div>
+      </div>
+
+      <!-- Header Actions & Utilities -->
+      <div class="d-flex align-items-center gap-2">
+        
+        <!-- Theme Toggle (Light / Dark) -->
+        <button type="button" class="nav-utility-btn js-theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+          <span class="js-theme-label d-none d-xl-inline" data-i18n="theme">Dark</span>
+        </button>
+
+        <!-- Language Switcher (BN / EN) -->
+        <button type="button" class="nav-utility-btn js-lang-toggle" aria-label="Toggle Language" title="Change Language (বাংলা / English)">
+          <i class="bi bi-translate"></i>
+          <span class="js-lang-label">EN</span>
+        </button>
+
+        <!-- Wishlist -->
+        <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="Wishlist" title="পছন্দের তালিকা">
+          <i class="bi bi-heart"></i>
+          <span class="header-action-badge wishlist-badge-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Cart (Order List) -->
+        <a href="cart.html" class="header-action-btn" aria-label="Cart" title="অর্ডার লিস্ট">
+          <i class="bi bi-bag"></i>
+          <span class="header-action-badge cart-badge-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Direct WhatsApp Helpline -->
+        <a href="https://wa.me/8801933407672" target="_blank" class="header-action-btn text-whatsapp d-none d-sm-flex" aria-label="WhatsApp Helpline" title="WhatsApp 01933407672">
+          <i class="bi bi-whatsapp fs-5"></i>
+          <span class="d-none d-lg-inline fw-bold">01933-407672</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Search Bar (under header on small screens) -->
+    <div class="header-search-container d-md-none pb-2">
+      <input type="text" class="header-search-input" placeholder="কিবোর্ড, মাউস, অডিও, স্মার্ট গ্যাজেট..." data-i18n-placeholder="search_placeholder" aria-label="Search tech products mobile">
+      <button type="button" class="header-search-btn" aria-label="Search submit">
+        <i class="bi bi-search"></i>
+      </button>
+      <div class="live-search-dropdown"></div>
+    </div>
+  </div>
+
+  <!-- Secondary Desktop Sub-Navbar -->
+  <nav class="sub-navbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <a href="shop.html" class="category-toggle-btn text-white text-decoration-none">
+          <i class="bi bi-grid-fill"></i> <span data-i18n="nav_shop">সকল প্রোডাক্ট</span>
+        </a>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">হোম</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html" data-i18n="nav_shop">সকল প্রোডাক্ট</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-bold" href="offers.html"><i class="bi bi-fire text-danger"></i> <span data-i18n="nav_offers">৬০% অফার</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="request.html" data-i18n="nav_request">কাস্টম রিকোয়েস্ট</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html" data-i18n="nav_how">কীভাবে কাজ করে</a></li>
+          <li class="nav-item"><a class="nav-link" href="track.html" data-i18n="nav_track">ট্র্যাক শিপমেন্ট</a></li>
+          <li class="nav-item"><a class="nav-link" href="founders.html" data-i18n="nav_founders">প্রতিষ্ঠাতা ও দল</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">আমাদের সম্পর্কে</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">যোগাযোগ</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center gap-3 text-white-50 small pe-2">
+        <span><i class="bi bi-shield-check text-warning me-1"></i> <span data-i18n="guarantee">১০০% অথেনটিক টেক</span></span>
+        <span><i class="bi bi-airplane text-info me-1"></i> <span data-i18n="eta_days">১২-১৮ দিনে এয়ার কার্গো</span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- Main Content Container -->
+  <main class="container my-3 my-lg-4">
+
+    <!-- 1. Hero Slider Section -->
+    <section class="hero-slider-wrap mb-4">
+      <div id="homeHeroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#homeHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#homeHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#homeHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="hero-slide-item" style="background: linear-gradient(135deg, #0B1F3A 0%, #173865 100%);">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <span class="hero-tag-badge">
+                    <i class="bi bi-airplane-fill"></i> Direct Shenzhen Air Cargo • Batch #84 Open
+                  </span>
+                  <h1 class="hero-title">China Theke Direct,<br>Original Tech Sera Dame</h1>
+                  <p class="hero-subtitle">
+                    লোকাল শপের অতিরিক্ত মার্জিন ছাড়াই ১২-১৮ দিনে চায়না ফ্যাক্টরি থেকে আপনার হাতে। কোনো লুকানো কাস্টমস ফি নেই।
+                  </p>
+                  <div class="hero-cta-group">
+                    <a href="shop.html" class="btn btn-accent-custom px-4 py-3">
+                      <i class="bi bi-bag-check-fill"></i> Browse Pre-Orders
+                    </a>
+                    <a href="https://wa.me/8801933407672?text=Assalamu%20Alaikum,%20ami%20pre-order%20korte%20chai" target="_blank" class="btn btn-whatsapp px-4 py-3 pulse-whatsapp">
+                      <i class="bi bi-whatsapp"></i> Order on WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="hero-slide-item" style="background: linear-gradient(135deg, #071527 0%, #0F2D52 60%, #1E3A8A 100%);">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <span class="hero-tag-badge">
+                    <i class="bi bi-wallet2"></i> 100% Risk Reversal • Safe 40% Advance
+                  </span>
+                  <h1 class="hero-title">মাত্র ৪০% অ্যাডভান্স,<br>বাকি ৬০% দেশে পৌঁছালে!</h1>
+                  <p class="hero-subtitle">
+                    প্রোডাক্টের দাম + এয়ার কার্গো শিপিং + কাস্টমস ট্যাক্স অন্তর্ভুক্ত একটিমাত্র ক্লিয়ার প্রাইস। দেশে পৌঁছালে ক্যাশ অন ডেলিভারি।
+                  </p>
+                  <div class="hero-cta-group">
+                    <a href="how-it-works.html" class="btn btn-primary-custom px-4 py-3 border border-light">
+                      <i class="bi bi-info-circle-fill"></i> How It Works
+                    </a>
+                    <a href="track.html" class="btn btn-accent-custom px-4 py-3">
+                      <i class="bi bi-broadcast"></i> Track Next Flight
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="hero-slide-item" style="background: linear-gradient(135deg, #111827 0%, #1e293b 60%, #0F172A 100%);">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <span class="hero-tag-badge">
+                    <i class="bi bi-stars"></i> Custom Concierge • AliExpress / Taobao / 1688
+                  </span>
+                  <h1 class="hero-title">খুঁজছেন অন্য কিছু?<br>লিংক দিন, আমরা এনে দেব!</h1>
+                  <p class="hero-subtitle">
+                    যেকোনো চাইনিজ গ্যাজেটের লিংক বা মডেল নেম হোয়াটসঅ্যাপে পাঠিয়ে দিন, ১০ মিনিটে ফুল ল্যান্ডেড প্রাইস হিসাব করে জানাবো।
+                  </p>
+                  <div class="hero-cta-group">
+                    <a href="request.html" class="btn btn-accent-custom px-4 py-3">
+                      <i class="bi bi-link-45deg"></i> <span data-i18n="nav_request">কাস্টম রিকোয়েস্ট</span>
+                    </a>
+                    <a href="https://wa.me/8801933407672?text=Assalamu%20Alaikum,%20ami%20ekta%20custom%20product%20import%20korte%20chai" target="_blank" class="btn btn-whatsapp px-4 py-3">
+                      <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeHeroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeHeroCarousel" data-bs-slide="next" aria-label="Next slide">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. Trust Strip (4 Icons Reassurance) -->
+    <section class="trust-strip mb-4">
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <div class="trust-icon-wrap">
+              <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <div>
+              <div class="trust-item-title">১০০% অরিজিনাল</div>
+              <div class="trust-item-desc">ফ্যাক্টরি সিল প্যাকড</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <div class="trust-icon-wrap">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <div>
+              <div class="trust-item-title">নিরাপদ ৪০% অ্যাডভান্স</div>
+              <div class="trust-item-desc">বাকি ৬০% ডেলিভারিতে</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <div class="trust-icon-wrap">
+              <i class="bi bi-airplane-engines-fill"></i>
+            </div>
+            <div>
+              <div class="trust-item-title">১২-১৮ দিনে ডেলিভারি</div>
+              <div class="trust-item-desc">এক্সপ্রেস এয়ার কার্গো</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <div class="trust-icon-wrap">
+              <i class="bi bi-arrow-counterclockwise"></i>
+            </div>
+            <div>
+              <div class="trust-item-title">৭ দিনের রিপ্লেসমেন্ট</div>
+              <div class="trust-item-desc">ত্রুটি থাকলে ফুল রিফান্ড</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Category Grid -->
+    <section class="mb-5">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <h2 class="h4 mb-0 fw-bold">জনপ্রিয় ক্যাটাগরি সমূহ</h2>
+          <small class="text-muted">Top imported categories from Shenzhen</small>
+        </div>
+        <a href="shop.html" class="btn btn-outline-custom btn-sm">সব দেখুন →</a>
+      </div>
+      <div class="category-grid" id="categoryGridContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 4. How Pre-Order Works (The Core Trust Builder) -->
+    <section class="mb-5">
+      <div class="card-custom p-4 p-lg-5 bg-white">
+        <div class="text-center mb-4">
+          <span class="badge-custom badge-preorder mb-2">সহজ ও নিরাপদ ৪টি ধাপ</span>
+          <h2 class="h3 fw-bold">কীভাবে কাজ করে আমাদের চায়না প্রি-অর্ডার?</h2>
+          <p class="text-muted small">No complicated paperwork. Everything handled seamlessly via WhatsApp.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-num-badge">ধাপ ১</span>
+              <div class="step-icon-wrap"><i class="bi bi-hand-index-thumb"></i></div>
+              <h5>পছন্দ করুন</h5>
+              <p>ওয়েবসাইট থেকে প্রোডাক্ট ও কালার সিলেক্ট করুন বা অন্য যেকোনো চাইনিজ লিংক দিন।</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-num-badge">ধাপ ২</span>
+              <div class="step-icon-wrap"><i class="bi bi-whatsapp"></i></div>
+              <h5>হোয়াটসঅ্যাপে বুকিং</h5>
+              <p>১-ট্যাপে মেসেজ পাঠান। ৪০% অ্যাডভান্স পেমেন্ট (bKash/Nagad) করে স্লট কনফার্ম করুন।</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-num-badge">ধাপ ৩</span>
+              <div class="step-icon-wrap"><i class="bi bi-airplane-fill"></i></div>
+              <h5>এয়ার কার্গো শিপমেন্ট</h5>
+              <p>শেনঝেন হাব থেকে সরাসরি ঢাকায় ফ্লাইট। হোয়াটসঅ্যাপে লাইভ ট্র্যাকিং আপডেট পাবেন।</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-num-badge">ধাপ ৪</span>
+              <div class="step-icon-wrap"><i class="bi bi-box-seam-fill"></i></div>
+              <h5>ডেলিভারি ও ক্যাশ অন</h5>
+              <p>কাস্টমস ক্লিয়ার হয়ে আপনার ঠিকানায় পৌঁছালে বাকি ৬০% পেমেন্ট দিয়ে বুঝে নিন।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Live Shipment Batch Tracker Widget -->
+    <section class="mb-5">
+      <div class="batch-card" id="activeBatchWidget">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+          <div>
+            <span class="batch-badge mb-2">✈️ Current Air Cargo Flight</span>
+            <h3 class="h4 mb-0 text-white fw-bold">Batch #84 (Shenzhen → Dhaka)</h3>
+            <small class="text-white-50">Booking cut-off: 25 Oct • Guaranteed arrival: 04 Nov</small>
+          </div>
+          <div class="text-end">
+            <span class="badge bg-warning text-dark fw-bold px-3 py-2">
+              <i class="bi bi-fire"></i> ১২টি প্রি-অর্ডার স্লট বাকি!
+            </span>
+          </div>
+        </div>
+
+        <div class="stepper-container">
+          <div class="stepper-progress-bar">
+            <div class="stepper-progress-fill" style="width: 20%;"></div>
+          </div>
+          <div class="stepper-step completed">
+            <div class="stepper-circle"><i class="bi bi-check-lg"></i></div>
+            <span class="stepper-label">বুকিং ওপেন</span>
+          </div>
+          <div class="stepper-step active">
+            <div class="stepper-circle">২</div>
+            <span class="stepper-label">শেনঝেন ওয়্যারহাউস</span>
+          </div>
+          <div class="stepper-step">
+            <div class="stepper-circle">৩</div>
+            <span class="stepper-label">এয়ার কার্গো ফ্লাইট</span>
+          </div>
+          <div class="stepper-step">
+            <div class="stepper-circle">৪</div>
+            <span class="stepper-label">ঢাকা কাস্টমস</span>
+          </div>
+          <div class="stepper-step">
+            <div class="stepper-circle">৫</div>
+            <span class="stepper-label">ডেলিভারি</span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 border-top border-secondary">
+          <span class="small text-white-50">
+            <i class="bi bi-check2-circle text-success"></i> কাস্টমসের কোনো বাড়তি চার্জ বা এয়ারপোর্ট ট্যাক্স ক্রেতাকে দিতে হবে না।
+          </span>
+          <a href="track.html" class="btn btn-outline-light btn-sm mt-2 mt-sm-0">
+            ব্যাচ ডিটেইলস ও পূর্ববর্তী শিপমেন্ট দেখুন →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Smart Budget Picker ("Help Me Choose" / D-Lite) -->
+    <section class="mb-5">
+      <div class="card-custom p-4 bg-white">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
+          <div>
+            <h3 class="h5 fw-bold mb-1">
+              <i class="bi bi-magic text-accent"></i> আপনার বাজেট কত?
+            </h3>
+            <small class="text-muted">বাজেট অনুযায়ী ইনস্ট্যান্ট প্রি-অর্ডার গ্যাজেট ফিল্টার করুন</small>
+          </div>
+          <div class="budget-chip-group" id="budgetChipContainer">
+            <button type="button" class="budget-chip active" data-min="0" data-max="999999">সব প্রোডাক্ট</button>
+            <button type="button" class="budget-chip" data-min="1000" data-max="2500">৳১,০০০ – ৳২,৫০০</button>
+            <button type="button" class="budget-chip" data-min="2501" data-max="4000">৳২,৫০০ – ৳৪,০০০</button>
+            <button type="button" class="budget-chip" data-min="4001" data-max="6000">৳৪,০০০ – ৳৬,০০০</button>
+            <button type="button" class="budget-chip" data-min="6001" data-max="999999">৳৬,০০০+</button>
+          </div>
+        </div>
+
+        <!-- Filtered showcase grid -->
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-md-4" id="budgetProductsContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Hot Pre-Order Drops / Viral Tech -->
+    <section class="mb-5">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <span class="badge-custom badge-hot mb-1">🔥 Top Chinese Viral Gear</span>
+          <h2 class="h4 mb-0 fw-bold">হট প্রি-অর্ডার ট্রেন্ডিং</h2>
+        </div>
+        <a href="shop.html" class="btn btn-outline-custom btn-sm">সব ব্রাউজ করুন →</a>
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-md-4" id="trendingProductsContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 8. Request Any Product CTA Banner -->
+    <section class="mb-5">
+      <div class="card-custom p-4 p-lg-5" style="background: linear-gradient(135deg, #0B1F3A 0%, #163660 70%, #FF6B1A 200%); color: #FFFFFF;">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="badge bg-warning text-dark fw-bold px-3 py-1 mb-2">AliExpress • Taobao • 1688 • Amazon</span>
+            <h2 class="h3 fw-bold mb-3">ওয়েবসাইটে যা খুঁজছেন তা পাচ্ছেন না?</h2>
+            <p class="text-light mb-4">
+              যেকোনো চাইনিজ স্টোরের প্রোডাক্টের লিংক বা নাম পাঠিয়ে দিন। আমরা সরাসরি অফিশিয়াল সোর্স থেকে ভেরিফাই করে এয়ার ফ্রেইট ও কাস্টমস সহ সঠিক ল্যান্ডেড প্রাইস হিসাব করে জানাবো।
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="request.html" class="btn btn-accent-custom px-4 py-2">
+                <i class="bi bi-pencil-square"></i> কাস্টম ইমপোর্ট ফর্ম পূরণ করুন
+              </a>
+              <a href="https://wa.me/8801933407672?text=Assalamu%20Alaikum,%20ami%20ekta%20product%20import%20korte%20chai" target="_blank" class="btn btn-whatsapp px-4 py-2">
+                <i class="bi bi-whatsapp"></i> হোয়াটসঅ্যাপে লিংক পাঠান
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center d-none d-lg-block">
+            <div class="p-4 bg-white bg-opacity-10 rounded-4 border border-white border-opacity-25">
+              <i class="bi bi-link-45deg fs-1 text-warning mb-2 d-block"></i>
+              <h5 class="fw-bold">10-Minute Quotation</h5>
+              <p class="small text-white-50 mb-3">AliExpress, Taobao, or 1688 product links accepted.</p>
+              <a href="request.html" class="btn btn-light btn-sm fw-bold">রিকোয়েস্ট পাঠান</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Why Choose Us (Comparison: Local Store vs TechBridge) -->
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <h2 class="h4 fw-bold">কেন সরাসরি চায়না থেকে প্রি-অর্ডার করবেন?</h2>
+        <p class="text-muted small">লোকাল রিটেল শপ বনাম TechBridge BD প্রি-অর্ডারের পার্থক্য</p>
+      </div>
+
+      <div class="comparison-card">
+        <div class="table-responsive">
+          <table class="table comparison-table mb-0">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 35%;">ফিচার / সুবিধা</th>
+                <th scope="col" class="text-danger" style="width: 32%;">লোকাল রিটেল শপ</th>
+                <th scope="col" class="text-success bg-light fw-bold" style="width: 33%;">TechBridge BD (চায়না প্রি-অর্ডার)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fw-bold">প্রাইস ও সেভিংস</td>
+                <td>উচ্চ লোকাল শপ রেন্ট ও ৩-৪ স্তরের মিডলম্যানের মার্জিন (২৫-৪০% বেশি দাম)</td>
+                <td class="bg-light fw-bold text-success"><i class="bi bi-check-circle-fill text-success"></i> সরাসরি ফ্যাক্টরি রেট + এয়ার ফ্রেইট (২৫-৪০% পর্যন্ত সাশ্রয়)</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">প্রোডাক্টের অরিজিনালিটি</td>
+                <td>লট/কপি মালের ঝুঁকি থাকে</td>
+                <td class="bg-light fw-bold text-success"><i class="bi bi-check-circle-fill text-success"></i> সরাসরি ব্র্যান্ড অফিশিয়াল স্টোর ইনভয়েস সহ ইনট্যাক্ট প্যাক</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">কাস্টম প্রোডাক্ট ইমপোর্ট</td>
+                <td>দোকানে যা আছে শুধু তাই কেনা সম্ভব</td>
+                <td class="bg-light fw-bold text-success"><i class="bi bi-check-circle-fill text-success"></i> যেকোনো চাইনিজ ব্র্যান্ড, মডেল বা স্পেক রিকোয়েস্ট করার স্বাধীনতা</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">কাস্টমস ও হিডেন চার্জ</td>
+                <td>অনেক অনলাইন পেজ পরে কাস্টমস ফি দাবি করে</td>
+                <td class="bg-light fw-bold text-success"><i class="bi bi-check-circle-fill text-success"></i> ১০০% জিরো হিডেন কস্ট। ওয়েবসাইটে দেখানো দামই ফাইনাল দাম</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">নষ্ট বা ভুল প্রোডাক্ট এলে</td>
+                <td>সাধারণত কোনো দায়ভার নেয় না</td>
+                <td class="bg-light fw-bold text-success"><i class="bi bi-check-circle-fill text-success"></i> ৭ দিনের ১০০% রিপ্লেসমেন্ট বা ফুল রিফান্ড গ্যারান্টি</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Real Customer Reviews & Social Proof -->
+    <section class="mb-5">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <span class="badge-custom badge-success-soft mb-1">কাস্টমার মতামত</span>
+          <h2 class="h4 mb-0 fw-bold">সফল প্রি-অর্ডার ডেলিভারির রিভিউ</h2>
+        </div>
+        <span class="text-muted small">৪,৮০০+ সফল ডেলিভারি</span>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-4" id="reviewsContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 11. FAQ Accordion (Top 6 Objections Handled) -->
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <span class="badge-custom badge-preorder mb-1">স্বচ্ছতা ও নিরাপত্তা</span>
+        <h2 class="h4 fw-bold">সাধারণ জিজ্ঞাসা ও উত্তর (FAQ)</h2>
+        <p class="text-muted small">প্রি-অর্ডার করার আগে আপনার সব প্রশ্নের সৎ ও পরিষ্কার উত্তর</p>
+      </div>
+
+      <div class="accordion card-custom overflow-hidden" id="faqAccordion">
+        <!-- Rendered by JS or statically structured for fast render -->
+      </div>
+    </section>
+
+    <!-- 12. Final High-Trust WhatsApp CTA -->
+    <section class="mb-4">
+      <div class="card-custom p-4 p-md-5 text-center bg-white">
+        <i class="bi bi-whatsapp fs-1 text-whatsapp mb-3 d-inline-block"></i>
+        <h2 class="h3 fw-bold mb-2">মনের কোনো প্রশ্ন আছে? সরাসরি আমাদের সাথে কথা বলুন</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          কোনো প্রি-অর্ডার সিদ্ধান্ত নেয়ার আগে আমাদের প্রতিনিধির সাথে ফ্রি কনসালটেশন নিন। আপনার প্রোডাক্টের দাম, অ্যাডভান্স ও আনুমানিক ডেলিভারি তারিখ জেনে নিন।
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="https://wa.me/8801933407672?text=Assalamu%20Alaikum,%20ami%20pre-order%20bishoye%20kotha%20bolte%20chai" target="_blank" class="btn btn-whatsapp px-4 py-3 pulse-whatsapp">
+            <i class="bi bi-whatsapp fs-5"></i> হোয়াটসঅ্যাপে সরাসরি কথা বলুন
+          </a>
+          <a href="shop.html" class="btn btn-outline-custom px-4 py-3">
+            <i class="bi bi-shop"></i> শপ ব্রাউজ করুন
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Unified Footer -->
+  <!-- Global Unified Footer Component -->
+<footer class="bg-primary-dark text-white pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row g-4 pb-4 border-bottom border-secondary">
+      
+      <!-- Col 1: Brand Info & Socials -->
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="assets/img/logo.png" alt="TechBridge BD" class="brand-logo-img" style="width: 44px; height: 44px;">
+          <div>
+            <h4 class="h5 mb-0 fw-bold text-white">Tech<span class="text-accent">Bridge</span> BD</h4>
+            <small class="text-white-50">Direct China Tech Pre-Order Hub</small>
+          </div>
+        </div>
+        <p class="text-white-50 small mb-3" data-i18n="footer_desc">
+          আমরা চীন দেশের অফিসিয়াল ব্র্যান্ড ফ্ল্যাগশিপ স্টোর থেকে আসল টেক প্রোডাক্ট সংগ্রহ করে সরাসরি এয়ার কার্গো শিপমেন্টে বাংলাদেশে পৌঁছে দিই। সম্পূর্ণ স্বচ্ছ প্রাইসিং ও জিরো হিডেন ফি।
+        </p>
+        <div class="d-flex gap-2">
+          <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://wa.me/8801933407672" target="_blank" class="btn btn-success btn-sm rounded-circle p-2" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="col-6 col-lg-2">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_quick_links">প্রয়োজনীয় লিংক</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 text-white-50">
+          <li><a href="shop.html" class="text-decoration-none text-white-50" data-i18n="nav_shop">সকল প্রোডাক্ট</a></li>
+          <li><a href="offers.html" class="text-decoration-none text-warning fw-bold"><i class="bi bi-fire text-danger"></i> <span data-i18n="nav_offers">৬০% স্পেশাল অফার</span></a></li>
+          <li><a href="request.html" class="text-decoration-none text-white-50" data-i18n="nav_request">কাস্টম প্রোডাক্ট রিকোয়েস্ট</a></li>
+          <li><a href="how-it-works.html" class="text-decoration-none text-white-50" data-i18n="nav_how">কীভাবে কাজ করে</a></li>
+          <li><a href="track.html" class="text-decoration-none text-white-50" data-i18n="nav_track">শিপমেন্ট ট্র্যাকিং</a></li>
+          <li><a href="cart.html" class="text-decoration-none text-white-50" data-i18n="cart">অর্ডার লিস্ট (কার্ট)</a></li>
+          <li><a href="founders.html" class="text-decoration-none text-white-50" data-i18n="nav_founders">প্রতিষ্ঠাতা ও নেতৃত্ব</a></li>
+          <li><a href="about.html" class="text-decoration-none text-white-50" data-i18n="nav_about">আমাদের সম্পর্কে</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Policies -->
+      <div class="col-6 col-lg-2">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_policies">পলিসি ও শর্তাবলী</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 text-white-50">
+          <li><a href="policy/pre-order.html" class="text-decoration-none text-white-50" data-i18n="policy_preorder">প্রি-অর্ডার পলিসি</a></li>
+          <li><a href="policy/refund.html" class="text-decoration-none text-white-50" data-i18n="policy_refund">রিফান্ড ও রিপ্লেসমেন্ট</a></li>
+          <li><a href="policy/shipping.html" class="text-decoration-none text-white-50" data-i18n="policy_shipping">শিপিং ও কাস্টমস গাইড</a></li>
+          <li><a href="policy/privacy.html" class="text-decoration-none text-white-50" data-i18n="policy_privacy">প্রাইভেসি পলিসি</a></li>
+          <li><a href="contact.html" class="text-decoration-none text-white-50" data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Office -->
+      <div class="col-lg-4">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_contact">যোগাযোগের ঠিকানা</h5>
+        <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2">
+          <li><i class="bi bi-geo-alt-fill text-warning me-2"></i> <span data-i18n="footer_address">Suite 408, Level 4, Multiplan Center, New Elephant Road, Dhaka-1205</span></li>
+          <li><i class="bi bi-telephone-fill text-warning me-2"></i> +880 1933-407672</li>
+          <li><i class="bi bi-whatsapp text-whatsapp me-2"></i> +880 1933-407672 (WhatsApp Order Desk)</li>
+          <li><i class="bi bi-clock-fill text-warning me-2"></i> <span data-i18n="footer_hours">শনি - বৃহস্পতি: সকাল ১০টা – রাত ৯টা</span></li>
+        </ul>
+
+        <div class="mt-3 p-3 rounded-3 bg-white bg-opacity-10">
+          <span class="small fw-bold d-block text-white mb-2" data-i18n="footer_payment"><i class="bi bi-credit-card-2-front"></i> পেমেন্ট মেথড (৪০% অ্যাডভান্স):</span>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge bg-light text-dark">bKash (Merchant)</span>
+            <span class="badge bg-light text-dark">Nagad</span>
+            <span class="badge bg-light text-dark">Visa</span>
+            <span class="badge bg-light text-dark">Mastercard</span>
+            <span class="badge bg-light text-dark">SSLCOMMERZ</span>
+            <span class="badge bg-success text-white">60% COD Balance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar with Founders Mention -->
+    <div class="pt-4 text-center text-white-50 small">
+      <p class="mb-1" data-i18n="founder_title">
+        প্রতিষ্ঠাতা ও প্রধান ডিজাইনার: <strong>উরফা হাসান ফাত্তাহ</strong> | সহ-প্রতিষ্ঠাতা ও অপারেশনস: <strong>শফিউর রহমান</strong>
+      </p>
+      <p class="mb-0">
+        &copy; 2026 <strong>TechBridge BD</strong>. <span data-i18n="footer_rights">সর্বস্বত্ব সংরক্ষিত।</span> Direct China Tech Pre-Order Ecosystem.
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Fixed Mobile Bottom Navigation -->
+  <!-- Fixed Mobile Bottom Navigation Component -->
+<nav class="mobile-bottom-nav">
+  <a href="index.html" class="mobile-nav-item">
+    <i class="bi bi-house-door"></i>
+    <span data-i18n="nav_home">হোম</span>
+  </a>
+  <a href="shop.html" class="mobile-nav-item">
+    <i class="bi bi-grid-fill"></i>
+    <span data-i18n="nav_shop">শপ</span>
+  </a>
+  <a href="https://wa.me/8801933407672" target="_blank" class="mobile-nav-whatsapp-center" aria-label="Order on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="offers.html" class="mobile-nav-item text-danger">
+    <i class="bi bi-fire text-danger"></i>
+    <span data-i18n="nav_offers">৬০% অফার</span>
+  </a>
+  <a href="cart.html" class="mobile-nav-item">
+    <i class="bi bi-bag"></i>
+    <span data-i18n="cart">কার্ট</span>
+    <span class="nav-badge cart-badge-count" style="display: none;">0</span>
+  </a>
+</nav>
+
+  <!-- Floating WhatsApp Action Button (Desktop & Mobile) -->
+  <a href="https://wa.me/8801933407672?text=Assalamu%20Alaikum,%20ami%20TechBridge%20er%20sathe%20kotha%20bolte%20chai" target="_blank" class="floating-whatsapp-btn pulse-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Mobile Offcanvas Menu -->
+  <!-- Mobile Offcanvas Navigation Menu Component -->
+<!-- Mobile Offcanvas Navigation Menu Component -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenuOffcanvas" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header bg-primary-dark text-white">
+    <div class="d-flex align-items-center gap-2">
+      <img src="assets/img/logo.png" alt="TechBridge BD Logo" class="brand-logo-img" style="width: 34px; height: 34px;">
+      <div>
+        <h5 class="offcanvas-title mb-0 fw-bold" id="mobileMenuLabel">Tech<span class="text-accent">Bridge</span></h5>
+        <small class="text-white-50" style="font-size: 0.7rem;">China Direct Pre-Order</small>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column justify-content-between">
+    <div>
+      <!-- Main Nav Links -->
+      <ul class="offcanvas-nav-list mb-3">
+        <li>
+          <a class="offcanvas-nav-link" href="index.html">
+            <i class="bi bi-house-door"></i>
+            <span data-i18n="nav_home">হোম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="shop.html">
+            <i class="bi bi-grid-fill"></i>
+            <span data-i18n="nav_shop">সকল প্রি-অর্ডার প্রোডাক্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link text-danger" href="offers.html">
+            <i class="bi bi-fire text-danger"></i>
+            <span data-i18n="nav_offers">স্পেশাল ৬০% অফার</span>
+            <span class="badge bg-danger text-white ms-auto">HOT</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="cart.html">
+            <i class="bi bi-bag"></i>
+            <span data-i18n="cart">কার্ট (অর্ডার তালিকা)</span>
+            <span class="badge bg-primary ms-auto cart-badge-count" style="display: none;">0</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="request.html">
+            <i class="bi bi-link-45deg"></i>
+            <span data-i18n="nav_request">কাস্টম রিকোয়েস্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="track.html">
+            <i class="bi bi-broadcast"></i>
+            <span data-i18n="nav_track">লাইভ শিপমেন্ট ট্র্যাকার</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="how-it-works.html">
+            <i class="bi bi-question-circle"></i>
+            <span data-i18n="nav_how">কীভাবে প্রি-অর্ডার কাজ করে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="pre-order.html">
+            <i class="bi bi-file-text"></i>
+            <span data-i18n="policy_preorder">প্রি-অর্ডার পলিসি ও নিয়ম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="founders.html">
+            <i class="bi bi-people"></i>
+            <span data-i18n="nav_founders">প্রতিষ্ঠাতা ও দল (Founders)</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="about.html">
+            <i class="bi bi-info-circle"></i>
+            <span data-i18n="nav_about">আমাদের সম্পর্কে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="contact.html">
+            <i class="bi bi-geo-alt"></i>
+            <span data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Policies Sub-Section -->
+      <div class="pt-2 pb-1 border-top">
+        <small class="text-uppercase text-muted fw-bold mb-2 d-block px-2" style="font-size: 0.68rem;">আইনি ও অন্যান্য পলিসি</small>
+        <div class="d-flex flex-wrap gap-2 px-2">
+          <a href="policy/refund.html" class="small text-muted text-decoration-none">রিফান্ড পলিসি</a>
+          <span class="text-muted">•</span>
+          <a href="policy/shipping.html" class="small text-muted text-decoration-none">শিপিং গাইড</a>
+          <span class="text-muted">•</span>
+          <a href="policy/privacy.html" class="small text-muted text-decoration-none">প্রাইভেসি</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme / Language & WhatsApp Helpbox -->
+    <div>
+      <div class="d-flex gap-2 my-3 pt-3 border-top">
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-theme-toggle">
+          <i class="bi bi-moon-stars-fill me-1"></i> <span class="js-theme-label">Theme</span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-lang-toggle">
+          <i class="bi bi-translate me-1"></i> <span class="js-lang-label">Language</span>
+        </button>
+      </div>
+
+      <div class="offcanvas-helpbox">
+        <p class="small text-muted mb-2">সরাসরি কথা বলতে চান?</p>
+        <a href="https://wa.me/8801933407672" target="_blank" class="btn btn-whatsapp w-100 py-2 fw-semibold">
+          <i class="bi bi-whatsapp"></i> 01933-407672
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- App Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module">
+    import { DataService } from './assets/js/dataService.js';
+    import { RenderService } from './assets/js/render.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // 1. Load Categories
+      const categories = await DataService.getCategories();
+      const catContainer = document.getElementById('categoryGridContainer');
+      if (catContainer && categories.length > 0) {
+        catContainer.innerHTML = categories.slice(0, 8).map(c => RenderService.renderCategoryItem(c)).join('');
+      }
+
+      // 2. Load Products & Initialize Budget Picker
+      const allProducts = await DataService.getAllProducts();
+
+      function updateBudgetShowcase(min, max) {
+        const container = document.getElementById('budgetProductsContainer');
+        if (!container) return;
+        const filtered = allProducts.filter(p => p.price.final >= min && p.price.final <= max);
+        container.innerHTML = filtered.slice(0, 8).map(p => RenderService.renderProductCard(p)).join('');
+      }
+
+      updateBudgetShowcase(0, 999999);
+
+      // Budget Chips click
+      const chips = document.querySelectorAll('.budget-chip');
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          const min = Number(chip.dataset.min);
+          const max = Number(chip.dataset.max);
+          updateBudgetShowcase(min, max);
+        });
+      });
+
+      // 3. Load Trending Products
+      const trendingContainer = document.getElementById('trendingProductsContainer');
+      if (trendingContainer) {
+        const trending = allProducts.filter(p => p.featured || p.badges.includes('Hot Seller')).slice(0, 8);
+        trendingContainer.innerHTML = trending.map(p => RenderService.renderProductCard(p)).join('');
+      }
+
+      // 4. Load Customer Reviews
+      const reviews = await DataService.getReviews();
+      const reviewsContainer = document.getElementById('reviewsContainer');
+      if (reviewsContainer && reviews.length > 0) {
+        reviewsContainer.innerHTML = reviews.slice(0, 3).map(r => `
+          <div class="col">${RenderService.renderReviewCard(r)}</div>
+        `).join('');
+      }
+
+      // 5. Load FAQs
+      const faqs = await DataService.getFaqs();
+      const faqAccordion = document.getElementById('faqAccordion');
+      if (faqAccordion && faqs.length > 0) {
+        faqAccordion.innerHTML = faqs.map((f, i) => `
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading${i}">
+              <button class="accordion-button ${i === 0 ? '' : 'collapsed'} fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="${i === 0 ? 'true' : 'false'}" aria-controls="collapse${i}">
+                <i class="bi bi-question-circle-fill text-accent me-2"></i> ${f.question}
+              </button>
+            </h3>
+            <div id="collapse${i}" class="accordion-collapse collapse ${i === 0 ? 'show' : ''}" aria-labelledby="heading${i}" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary">
+                ${f.answer}
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>

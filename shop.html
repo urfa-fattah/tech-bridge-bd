@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Order Shop — TechBridge BD</title>
+  <meta name="description" content="চায়না থেকে প্রি-অর্ডার করুন গ্যাজেট, মেকানিক্যাল কিবোর্ড, পিসি কুলার ও অডিও সামগ্রী।">
+  <link rel="icon" href="assets/img/logo.png">
+
+  <!-- Resource Preconnect & DNS-Prefetch for Maximum Speed -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="icon" href="assets/img/logo.png">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Dismissable Announcement Pop-Up Capsule -->
+  <!-- Top Dismissable Announcement Pop-Up Capsule -->
+<aside class="announcement-popup" id="announcementPopup" role="alert" aria-label="Official Announcement">
+  <div class="announcement-popup-inner">
+    <span class="announcement-live-indicator" aria-hidden="true"></span>
+    <span class="announcement-text" data-i18n="announcement_text">
+      চীন থেকে সরাসরি আসল টেক প্রি-অর্ডার চলছে! ১২-১৮ দিনে এয়ার কার্গো ডেলিভারি!
+    </span>
+    <a href="offers.html" class="announcement-link" data-i18n="announcement_link">
+      স্পেশাল ৬০% অফার দেখুন <i class="bi bi-arrow-right-short"></i>
+    </a>
+    <button type="button" class="announcement-popup-close" id="announcementCloseBtn" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</aside>
+
+  <!-- Sticky Main Header -->
+  <!-- Sticky Main Header Component -->
+<header class="site-header">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 gap-3">
+      
+      <!-- Mobile Menu Toggle & Brand Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn btn-outline-custom d-lg-none p-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenuOffcanvas" aria-label="Toggle menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+
+        <a href="index.html" class="header-brand">
+          <img src="assets/img/logo.png" alt="TechBridge BD Logo" class="brand-logo-img">
+          <div class="brand-text-wrap">
+            <span class="brand-name">Tech<span>Bridge</span></span>
+            <span class="brand-subtitle d-block">China Direct Pre-Order</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Search Bar with Live Auto-Complete Dropdown -->
+      <div class="header-search-container d-none d-md-block">
+        <input type="text" class="header-search-input" placeholder="কিবোর্ড, মাউস, অডিও, স্মার্ট গ্যাজেট খুঁজুন..." data-i18n-placeholder="search_placeholder" aria-label="Search tech products">
+        <button type="button" class="header-search-btn" aria-label="Search submit">
+          <i class="bi bi-search"></i>
+        </button>
+        <div class="live-search-dropdown" id="globalLiveSearchDropdown"></div>
+      </div>
+
+      <!-- Header Actions & Utilities -->
+      <div class="d-flex align-items-center gap-2">
+        
+        <!-- Theme Toggle (Light / Dark) -->
+        <button type="button" class="nav-utility-btn js-theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+          <span class="js-theme-label d-none d-xl-inline" data-i18n="theme">Dark</span>
+        </button>
+
+        <!-- Language Switcher (BN / EN) -->
+        <button type="button" class="nav-utility-btn js-lang-toggle" aria-label="Toggle Language" title="Change Language (বাংলা / English)">
+          <i class="bi bi-translate"></i>
+          <span class="js-lang-label">EN</span>
+        </button>
+
+        <!-- Wishlist -->
+        <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="Wishlist" title="পছন্দের তালিকা">
+          <i class="bi bi-heart"></i>
+          <span class="header-action-badge wishlist-badge-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Cart (Order List) -->
+        <a href="cart.html" class="header-action-btn" aria-label="Cart" title="অর্ডার লিস্ট">
+          <i class="bi bi-bag"></i>
+          <span class="header-action-badge cart-badge-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Direct WhatsApp Helpline -->
+        <a href="https://wa.me/8801933407672" target="_blank" class="header-action-btn text-whatsapp d-none d-sm-flex" aria-label="WhatsApp Helpline" title="WhatsApp 01933407672">
+          <i class="bi bi-whatsapp fs-5"></i>
+          <span class="d-none d-lg-inline fw-bold">01933-407672</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Search Bar (under header on small screens) -->
+    <div class="header-search-container d-md-none pb-2">
+      <input type="text" class="header-search-input" placeholder="কিবোর্ড, মাউস, অডিও, স্মার্ট গ্যাজেট..." data-i18n-placeholder="search_placeholder" aria-label="Search tech products mobile">
+      <button type="button" class="header-search-btn" aria-label="Search submit">
+        <i class="bi bi-search"></i>
+      </button>
+      <div class="live-search-dropdown"></div>
+    </div>
+  </div>
+
+  <!-- Secondary Desktop Sub-Navbar -->
+  <nav class="sub-navbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <a href="shop.html" class="category-toggle-btn text-white text-decoration-none">
+          <i class="bi bi-grid-fill"></i> <span data-i18n="nav_shop">সকল প্রোডাক্ট</span>
+        </a>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">হোম</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html" data-i18n="nav_shop">সকল প্রোডাক্ট</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-bold" href="offers.html"><i class="bi bi-fire text-danger"></i> <span data-i18n="nav_offers">৬০% অফার</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="request.html" data-i18n="nav_request">কাস্টম রিকোয়েস্ট</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html" data-i18n="nav_how">কীভাবে কাজ করে</a></li>
+          <li class="nav-item"><a class="nav-link" href="track.html" data-i18n="nav_track">ট্র্যাক শিপমেন্ট</a></li>
+          <li class="nav-item"><a class="nav-link" href="founders.html" data-i18n="nav_founders">প্রতিষ্ঠাতা ও দল</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">আমাদের সম্পর্কে</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">যোগাযোগ</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center gap-3 text-white-50 small pe-2">
+        <span><i class="bi bi-shield-check text-warning me-1"></i> <span data-i18n="guarantee">১০০% অথেনটিক টেক</span></span>
+        <span><i class="bi bi-airplane text-info me-1"></i> <span data-i18n="eta_days">১২-১৮ দিনে এয়ার কার্গো</span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- Main Shop Page Content -->
+  <main class="container my-3 my-lg-4">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" id="breadcrumbActiveText">Pre-Order Shop</li>
+      </ol>
+    </nav>
+
+    <!-- Page Title & Mobile Filter Bar -->
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+      <div>
+        <h1 class="h3 fw-bold mb-1" id="pageHeadingTitle">সকল প্রি-অর্ডার গ্যাজেট</h1>
+        <p class="text-muted small mb-0">Showing <span id="productCountBadge" class="fw-bold text-primary">0</span> products</p>
+      </div>
+
+      <!-- Mobile Filter Trigger Button & Sort Dropdown -->
+      <div class="d-flex align-items-center gap-2 w-100 w-sm-auto justify-content-between justify-content-sm-end">
+        <button class="btn btn-outline-custom d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas" aria-label="Open Filters">
+          <i class="bi bi-sliders"></i> ফিল্টারসমূহ
+        </button>
+
+        <div class="d-flex align-items-center gap-2">
+          <label for="sortSelect" class="small fw-semibold text-muted d-none d-sm-inline">Sort:</label>
+          <select class="form-select form-select-sm" id="sortSelect" style="width: auto;">
+            <option value="featured">Featured (জনপ্রিয়)</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated (রেটিং)</option>
+            <option value="newest">New Arrivals (নতুন)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Filter Tags Row -->
+    <div class="d-flex flex-wrap gap-2 mb-3" id="activeFilterTags"></div>
+
+    <!-- Main Layout: Sidebar (Desktop) + Product Grid -->
+    <div class="row g-4">
+      
+      <!-- Desktop Sidebar Filter (Col 3) -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <div class="card-custom p-4 bg-white sticky-top" style="top: 90px;">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold mb-0"><i class="bi bi-funnel"></i> Filters</h5>
+            <button type="button" class="btn btn-link text-danger p-0 small text-decoration-none" id="resetFiltersBtnDesktop">Reset All</button>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="mb-4">
+            <h6 class="fw-bold small text-uppercase text-muted mb-2">ক্যাটাগরি</h6>
+            <div class="d-flex flex-column gap-1" id="desktopCategoryFilterList">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div class="mb-4">
+            <h6 class="fw-bold small text-uppercase text-muted mb-2">বাজেট রেঞ্জ (BDT)</h6>
+            <div class="row g-2 mb-2">
+              <div class="col-6">
+                <input type="number" class="form-control form-control-sm" id="minPriceInput" placeholder="Min" min="0">
+              </div>
+              <div class="col-6">
+                <input type="number" class="form-control form-control-sm" id="maxPriceInput" placeholder="Max">
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary-custom btn-sm w-100" id="applyPriceBtn">Apply Budget</button>
+          </div>
+
+          <!-- Brands Filter -->
+          <div class="mb-4">
+            <h6 class="fw-bold small text-uppercase text-muted mb-2">ব্র্যান্ড</h6>
+            <div class="d-flex flex-column gap-2" id="desktopBrandFilterList" style="max-height: 200px; overflow-y: auto;">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Custom Import Promo -->
+          <div class="p-3 bg-light rounded text-center">
+            <i class="bi bi-box-seam text-accent fs-3"></i>
+            <h6 class="fw-bold mt-2 mb-1">খুঁজে পাচ্ছেন না?</h6>
+            <p class="small text-muted mb-2">যেকোনো চাইনিজ মডেল নাম দিয়ে রিকোয়েস্ট করুন।</p>
+            <a href="request.html" class="btn btn-accent-custom btn-sm w-100">Request Custom Item</a>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Products Grid (Col 9) -->
+      <div class="col-lg-9">
+        
+        <div class="row row-cols-2 row-cols-md-3 row-cols-xl-3 g-3 g-md-4" id="shopProductsGrid">
+          <!-- Rendered by JS -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="card-custom p-5 text-center bg-white my-4 d-none" id="emptyStateBox">
+          <i class="bi bi-search fs-1 text-muted mb-3 d-block"></i>
+          <h4 class="fw-bold">কোনো প্রোডাক্ট পাওয়া যায়নি</h4>
+          <p class="text-muted small mx-auto" style="max-width: 450px;">
+            আপনার ফিল্টারের সাথে মেলেনি। ফিল্টার রিসেট করুন অথবা আমাদের রিকোয়েস্ট ফর্মে আপনার প্রয়োজনীয় প্রোডাক্টের নাম জানান।
+          </p>
+          <div class="d-flex justify-content-center gap-2 mt-3">
+            <button type="button" class="btn btn-primary-custom" id="resetEmptyStateBtn">সকল প্রোডাক্ট দেখুন</button>
+            <a href="request.html" class="btn btn-accent-custom">Request Any Product</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Mobile Offcanvas Filter Drawer -->
+  <div class="offcanvas offcanvas-bottom h-75" tabindex="-1" id="filterOffcanvas" aria-labelledby="filterOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="filterOffcanvasLabel"><i class="bi bi-sliders"></i> ফিল্টারসমূহ</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+      <!-- Category in mobile -->
+      <div class="mb-3">
+        <h6 class="fw-bold text-uppercase small text-muted">ক্যাটাগরি</h6>
+        <div class="d-flex flex-wrap gap-2" id="mobileCategoryChips">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Price in mobile -->
+      <div class="mb-3">
+        <h6 class="fw-bold text-uppercase small text-muted">বাজেট (BDT)</h6>
+        <div class="row g-2">
+          <div class="col-6">
+            <input type="number" class="form-control form-control-sm" id="mobileMinPrice" placeholder="Min">
+          </div>
+          <div class="col-6">
+            <input type="number" class="form-control form-control-sm" id="mobileMaxPrice" placeholder="Max">
+          </div>
+        </div>
+      </div>
+
+      <!-- Brands in mobile -->
+      <div class="mb-3">
+        <h6 class="fw-bold text-uppercase small text-muted">ব্র্যান্ড</h6>
+        <div class="d-flex flex-wrap gap-2" id="mobileBrandChips">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 pt-3 border-top">
+        <button type="button" class="btn btn-accent-custom" data-bs-dismiss="offcanvas" id="applyMobileFilterBtn">ফিল্টার প্রয়োগ করুন</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm" id="resetMobileFilterBtn">সব মুছুন</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Global Unified Footer -->
+  <!-- Global Unified Footer Component -->
+<footer class="bg-primary-dark text-white pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row g-4 pb-4 border-bottom border-secondary">
+      
+      <!-- Col 1: Brand Info & Socials -->
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="assets/img/logo.png" alt="TechBridge BD" class="brand-logo-img" style="width: 44px; height: 44px;">
+          <div>
+            <h4 class="h5 mb-0 fw-bold text-white">Tech<span class="text-accent">Bridge</span> BD</h4>
+            <small class="text-white-50">Direct China Tech Pre-Order Hub</small>
+          </div>
+        </div>
+        <p class="text-white-50 small mb-3" data-i18n="footer_desc">
+          আমরা চীন দেশের অফিসিয়াল ব্র্যান্ড ফ্ল্যাগশিপ স্টোর থেকে আসল টেক প্রোডাক্ট সংগ্রহ করে সরাসরি এয়ার কার্গো শিপমেন্টে বাংলাদেশে পৌঁছে দিই। সম্পূর্ণ স্বচ্ছ প্রাইসিং ও জিরো হিডেন ফি।
+        </p>
+        <div class="d-flex gap-2">
+          <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://wa.me/8801933407672" target="_blank" class="btn btn-success btn-sm rounded-circle p-2" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="col-6 col-lg-2">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_quick_links">প্রয়োজনীয় লিংক</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 text-white-50">
+          <li><a href="shop.html" class="text-decoration-none text-white-50" data-i18n="nav_shop">সকল প্রোডাক্ট</a></li>
+          <li><a href="offers.html" class="text-decoration-none text-warning fw-bold"><i class="bi bi-fire text-danger"></i> <span data-i18n="nav_offers">৬০% স্পেশাল অফার</span></a></li>
+          <li><a href="request.html" class="text-decoration-none text-white-50" data-i18n="nav_request">কাস্টম প্রোডাক্ট রিকোয়েস্ট</a></li>
+          <li><a href="how-it-works.html" class="text-decoration-none text-white-50" data-i18n="nav_how">কীভাবে কাজ করে</a></li>
+          <li><a href="track.html" class="text-decoration-none text-white-50" data-i18n="nav_track">শিপমেন্ট ট্র্যাকিং</a></li>
+          <li><a href="cart.html" class="text-decoration-none text-white-50" data-i18n="cart">অর্ডার লিস্ট (কার্ট)</a></li>
+          <li><a href="founders.html" class="text-decoration-none text-white-50" data-i18n="nav_founders">প্রতিষ্ঠাতা ও নেতৃত্ব</a></li>
+          <li><a href="about.html" class="text-decoration-none text-white-50" data-i18n="nav_about">আমাদের সম্পর্কে</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Policies -->
+      <div class="col-6 col-lg-2">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_policies">পলিসি ও শর্তাবলী</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 text-white-50">
+          <li><a href="policy/pre-order.html" class="text-decoration-none text-white-50" data-i18n="policy_preorder">প্রি-অর্ডার পলিসি</a></li>
+          <li><a href="policy/refund.html" class="text-decoration-none text-white-50" data-i18n="policy_refund">রিফান্ড ও রিপ্লেসমেন্ট</a></li>
+          <li><a href="policy/shipping.html" class="text-decoration-none text-white-50" data-i18n="policy_shipping">শিপিং ও কাস্টমস গাইড</a></li>
+          <li><a href="policy/privacy.html" class="text-decoration-none text-white-50" data-i18n="policy_privacy">প্রাইভেসি পলিসি</a></li>
+          <li><a href="contact.html" class="text-decoration-none text-white-50" data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Office -->
+      <div class="col-lg-4">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_contact">যোগাযোগের ঠিকানা</h5>
+        <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2">
+          <li><i class="bi bi-geo-alt-fill text-warning me-2"></i> <span data-i18n="footer_address">Suite 408, Level 4, Multiplan Center, New Elephant Road, Dhaka-1205</span></li>
+          <li><i class="bi bi-telephone-fill text-warning me-2"></i> +880 1933-407672</li>
+          <li><i class="bi bi-whatsapp text-whatsapp me-2"></i> +880 1933-407672 (WhatsApp Order Desk)</li>
+          <li><i class="bi bi-clock-fill text-warning me-2"></i> <span data-i18n="footer_hours">শনি - বৃহস্পতি: সকাল ১০টা – রাত ৯টা</span></li>
+        </ul>
+
+        <div class="mt-3 p-3 rounded-3 bg-white bg-opacity-10">
+          <span class="small fw-bold d-block text-white mb-2" data-i18n="footer_payment"><i class="bi bi-credit-card-2-front"></i> পেমেন্ট মেথড (৪০% অ্যাডভান্স):</span>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge bg-light text-dark">bKash (Merchant)</span>
+            <span class="badge bg-light text-dark">Nagad</span>
+            <span class="badge bg-light text-dark">Visa</span>
+            <span class="badge bg-light text-dark">Mastercard</span>
+            <span class="badge bg-light text-dark">SSLCOMMERZ</span>
+            <span class="badge bg-success text-white">60% COD Balance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar with Founders Mention -->
+    <div class="pt-4 text-center text-white-50 small">
+      <p class="mb-1" data-i18n="founder_title">
+        প্রতিষ্ঠাতা ও প্রধান ডিজাইনার: <strong>উরফা হাসান ফাত্তাহ</strong> | সহ-প্রতিষ্ঠাতা ও অপারেশনস: <strong>শফিউর রহমান</strong>
+      </p>
+      <p class="mb-0">
+        &copy; 2026 <strong>TechBridge BD</strong>. <span data-i18n="footer_rights">সর্বস্বত্ব সংরক্ষিত।</span> Direct China Tech Pre-Order Ecosystem.
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Fixed Mobile Bottom Navigation -->
+  <!-- Fixed Mobile Bottom Navigation Component -->
+<nav class="mobile-bottom-nav">
+  <a href="index.html" class="mobile-nav-item">
+    <i class="bi bi-house-door"></i>
+    <span data-i18n="nav_home">হোম</span>
+  </a>
+  <a href="shop.html" class="mobile-nav-item">
+    <i class="bi bi-grid-fill"></i>
+    <span data-i18n="nav_shop">শপ</span>
+  </a>
+  <a href="https://wa.me/8801933407672" target="_blank" class="mobile-nav-whatsapp-center" aria-label="Order on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="offers.html" class="mobile-nav-item text-danger">
+    <i class="bi bi-fire text-danger"></i>
+    <span data-i18n="nav_offers">৬০% অফার</span>
+  </a>
+  <a href="cart.html" class="mobile-nav-item">
+    <i class="bi bi-bag"></i>
+    <span data-i18n="cart">কার্ট</span>
+    <span class="nav-badge cart-badge-count" style="display: none;">0</span>
+  </a>
+</nav>
+
+  <!-- Floating WhatsApp Action Button -->
+  <!-- Floating WhatsApp Action Button Component -->
+<a href="https://wa.me/8801933407672" target="_blank" class="floating-whatsapp-btn pulse-whatsapp" aria-label="Chat on WhatsApp" title="WhatsApp 01933-407672">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+  <!-- Mobile Offcanvas Navigation Menu -->
+  <!-- Mobile Offcanvas Navigation Menu Component -->
+<!-- Mobile Offcanvas Navigation Menu Component -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenuOffcanvas" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header bg-primary-dark text-white">
+    <div class="d-flex align-items-center gap-2">
+      <img src="assets/img/logo.png" alt="TechBridge BD Logo" class="brand-logo-img" style="width: 34px; height: 34px;">
+      <div>
+        <h5 class="offcanvas-title mb-0 fw-bold" id="mobileMenuLabel">Tech<span class="text-accent">Bridge</span></h5>
+        <small class="text-white-50" style="font-size: 0.7rem;">China Direct Pre-Order</small>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column justify-content-between">
+    <div>
+      <!-- Main Nav Links -->
+      <ul class="offcanvas-nav-list mb-3">
+        <li>
+          <a class="offcanvas-nav-link" href="index.html">
+            <i class="bi bi-house-door"></i>
+            <span data-i18n="nav_home">হোম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="shop.html">
+            <i class="bi bi-grid-fill"></i>
+            <span data-i18n="nav_shop">সকল প্রি-অর্ডার প্রোডাক্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link text-danger" href="offers.html">
+            <i class="bi bi-fire text-danger"></i>
+            <span data-i18n="nav_offers">স্পেশাল ৬০% অফার</span>
+            <span class="badge bg-danger text-white ms-auto">HOT</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="cart.html">
+            <i class="bi bi-bag"></i>
+            <span data-i18n="cart">কার্ট (অর্ডার তালিকা)</span>
+            <span class="badge bg-primary ms-auto cart-badge-count" style="display: none;">0</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="request.html">
+            <i class="bi bi-link-45deg"></i>
+            <span data-i18n="nav_request">কাস্টম রিকোয়েস্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="track.html">
+            <i class="bi bi-broadcast"></i>
+            <span data-i18n="nav_track">লাইভ শিপমেন্ট ট্র্যাকার</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="how-it-works.html">
+            <i class="bi bi-question-circle"></i>
+            <span data-i18n="nav_how">কীভাবে প্রি-অর্ডার কাজ করে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="pre-order.html">
+            <i class="bi bi-file-text"></i>
+            <span data-i18n="policy_preorder">প্রি-অর্ডার পলিসি ও নিয়ম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="founders.html">
+            <i class="bi bi-people"></i>
+            <span data-i18n="nav_founders">প্রতিষ্ঠাতা ও দল (Founders)</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="about.html">
+            <i class="bi bi-info-circle"></i>
+            <span data-i18n="nav_about">আমাদের সম্পর্কে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="contact.html">
+            <i class="bi bi-geo-alt"></i>
+            <span data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Policies Sub-Section -->
+      <div class="pt-2 pb-1 border-top">
+        <small class="text-uppercase text-muted fw-bold mb-2 d-block px-2" style="font-size: 0.68rem;">আইনি ও অন্যান্য পলিসি</small>
+        <div class="d-flex flex-wrap gap-2 px-2">
+          <a href="policy/refund.html" class="small text-muted text-decoration-none">রিফান্ড পলিসি</a>
+          <span class="text-muted">•</span>
+          <a href="policy/shipping.html" class="small text-muted text-decoration-none">শিপিং গাইড</a>
+          <span class="text-muted">•</span>
+          <a href="policy/privacy.html" class="small text-muted text-decoration-none">প্রাইভেসি</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme / Language & WhatsApp Helpbox -->
+    <div>
+      <div class="d-flex gap-2 my-3 pt-3 border-top">
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-theme-toggle">
+          <i class="bi bi-moon-stars-fill me-1"></i> <span class="js-theme-label">Theme</span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-lang-toggle">
+          <i class="bi bi-translate me-1"></i> <span class="js-lang-label">Language</span>
+        </button>
+      </div>
+
+      <div class="offcanvas-helpbox">
+        <p class="small text-muted mb-2">সরাসরি কথা বলতে চান?</p>
+        <a href="https://wa.me/8801933407672" target="_blank" class="btn btn-whatsapp w-100 py-2 fw-semibold">
+          <i class="bi bi-whatsapp"></i> 01933-407672
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- App Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module">
+    import { DataService } from './assets/js/dataService.js';
+    import { RenderService } from './assets/js/render.js';
+    import { FilterService } from './assets/js/filters.js';
+    import { WishlistService } from './assets/js/wishlist.js';
+
+    let allProducts = [];
+    let currentFilters = {
+      category: 'all',
+      brands: [],
+      minPrice: null,
+      maxPrice: null,
+      search: '',
+      sortBy: 'featured',
+      wishlistOnly: false
+    };
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // 1. Parse URL Query Parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('category')) currentFilters.category = urlParams.get('category');
+      if (urlParams.get('search')) currentFilters.search = urlParams.get('search');
+      if (urlParams.get('wishlist') === 'true') currentFilters.wishlistOnly = true;
+
+      // Sync search input values
+      if (currentFilters.search) {
+        document.querySelectorAll('.header-search-input').forEach(input => {
+          input.value = currentFilters.search;
+        });
+      }
+
+      // 2. Fetch Data
+      allProducts = await DataService.getAllProducts();
+      const categories = await DataService.getCategories();
+      const brands = await DataService.getBrands();
+
+      // 3. Render Desktop & Mobile Filter Options
+      renderFilterSidebars(categories, brands);
+
+      // 4. Initial Render
+      renderCatalog();
+
+      // 5. Setup Filter Events
+      setupFilterEvents();
+
+      // 6. Listen to in-page search updates from search.js
+      window.addEventListener('techbridge:shop-search', (e) => {
+        currentFilters.search = e.detail?.query || '';
+        document.querySelectorAll('.header-search-input').forEach(input => {
+          input.value = currentFilters.search;
+        });
+        renderCatalog();
+      });
+    });
+
+    function renderFilterSidebars(categories, brands) {
+      // Category list
+      const desktopCatList = document.getElementById('desktopCategoryFilterList');
+      const mobileCatChips = document.getElementById('mobileCategoryChips');
+
+      const allCatHTML = `
+        <button type="button" class="btn btn-sm text-start py-1 px-2 ${currentFilters.category === 'all' ? 'fw-bold text-accent' : 'text-dark'} js-cat-filter" data-cat="all">
+          <i class="bi bi-circle-fill fs-6 me-2 opacity-50"></i> All Products
+        </button>
+      `;
+
+      const catItems = categories.map(c => `
+        <button type="button" class="btn btn-sm text-start py-1 px-2 ${currentFilters.category === c.slug ? 'fw-bold text-accent' : 'text-dark'} js-cat-filter" data-cat="${c.slug}">
+          <i class="bi ${c.icon} me-2 text-muted"></i> ${c.nameBn || c.name}
+        </button>
+      `).join('');
+
+      if (desktopCatList) desktopCatList.innerHTML = allCatHTML + catItems;
+
+      if (mobileCatChips) {
+        mobileCatChips.innerHTML = `
+          <button type="button" class="budget-chip ${currentFilters.category === 'all' ? 'active' : ''} js-cat-filter" data-cat="all">All</button>
+        ` + categories.map(c => `
+          <button type="button" class="budget-chip ${currentFilters.category === c.slug ? 'active' : ''} js-cat-filter" data-cat="${c.slug}">${c.nameBn || c.name}</button>
+        `).join('');
+      }
+
+      // Brands list
+      const desktopBrandList = document.getElementById('desktopBrandFilterList');
+      const mobileBrandChips = document.getElementById('mobileBrandChips');
+
+      if (desktopBrandList) {
+        desktopBrandList.innerHTML = brands.map(b => `
+          <div class="form-check small">
+            <input class="form-check-input js-brand-checkbox" type="checkbox" value="${b.id}" id="brand_${b.id}">
+            <label class="form-check-label" for="brand_${b.id}">${b.name}</label>
+          </div>
+        `).join('');
+      }
+
+      if (mobileBrandChips) {
+        mobileBrandChips.innerHTML = brands.map(b => `
+          <button type="button" class="budget-chip js-brand-chip" data-brand="${b.id}">${b.name}</button>
+        `).join('');
+      }
+    }
+
+    function renderActiveFilterPills() {
+      const container = document.getElementById('activeFilterTags');
+      if (!container) return;
+
+      const pills = [];
+
+      if (currentFilters.search) {
+        pills.push(`
+          <span class="badge bg-primary text-white d-inline-flex align-items-center gap-1 py-1 px-2 fs-7">
+            <i class="bi bi-search me-1"></i> "${currentFilters.search}"
+            <button type="button" class="btn-close btn-close-white ms-1 js-clear-search-filter" aria-label="Clear search" style="font-size:0.55rem;"></button>
+          </span>
+        `);
+      }
+
+      if (currentFilters.category && currentFilters.category !== 'all') {
+        pills.push(`
+          <span class="badge bg-secondary text-white d-inline-flex align-items-center gap-1 py-1 px-2 fs-7">
+            Category: ${currentFilters.category}
+            <button type="button" class="btn-close btn-close-white ms-1 js-clear-cat-filter" aria-label="Clear category" style="font-size:0.55rem;"></button>
+          </span>
+        `);
+      }
+
+      if (currentFilters.minPrice || currentFilters.maxPrice) {
+        pills.push(`
+          <span class="badge bg-light text-dark border d-inline-flex align-items-center gap-1 py-1 px-2 fs-7">
+            Budget: ৳${currentFilters.minPrice || 0} - ৳${currentFilters.maxPrice || 'Max'}
+            <button type="button" class="btn-close ms-1 js-clear-price-filter" aria-label="Clear price" style="font-size:0.55rem;"></button>
+          </span>
+        `);
+      }
+
+      if (pills.length > 0) {
+        pills.push(`
+          <button type="button" class="btn btn-link text-danger p-0 small text-decoration-none ms-1 js-clear-all-filters">
+            সব ফিল্টার মুছুন
+          </button>
+        `);
+      }
+
+      container.innerHTML = pills.join('');
+    }
+
+    function renderCatalog() {
+      let filtered = [...allProducts];
+
+      // Wishlist view
+      if (currentFilters.wishlistOnly) {
+        const wishIds = WishlistService.getItems().map(w => w.id);
+        filtered = filtered.filter(p => wishIds.includes(p.id));
+        document.getElementById('pageHeadingTitle').textContent = 'আমার সংরক্ষিত উইশলিস্ট';
+      } else {
+        document.getElementById('pageHeadingTitle').textContent = 'সকল প্রি-অর্ডার গ্যাজেট';
+      }
+
+      filtered = FilterService.applyFilters(filtered, currentFilters);
+
+      const grid = document.getElementById('shopProductsGrid');
+      const emptyBox = document.getElementById('emptyStateBox');
+      const countBadge = document.getElementById('productCountBadge');
+
+      if (countBadge) countBadge.textContent = filtered.length;
+
+      renderActiveFilterPills();
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyBox.classList.remove('d-none');
+      } else {
+        emptyBox.classList.add('d-none');
+        grid.innerHTML = filtered.map(p => RenderService.renderProductCard(p)).join('');
+      }
+    }
+
+    function setupFilterEvents() {
+      // Category clicks
+      document.body.addEventListener('click', (e) => {
+        const catBtn = e.target.closest('.js-cat-filter');
+        if (catBtn) {
+          currentFilters.category = catBtn.dataset.cat;
+          currentFilters.wishlistOnly = false;
+          document.querySelectorAll('.js-cat-filter').forEach(b => {
+            b.classList.remove('active', 'fw-bold', 'text-accent');
+          });
+          catBtn.classList.add('active', 'fw-bold', 'text-accent');
+          renderCatalog();
+          return;
+        }
+
+        // Clear search pill
+        if (e.target.closest('.js-clear-search-filter')) {
+          currentFilters.search = '';
+          document.querySelectorAll('.header-search-input').forEach(input => input.value = '');
+          const url = new URL(window.location);
+          url.searchParams.delete('search');
+          window.history.replaceState({}, '', url);
+          renderCatalog();
+          return;
+        }
+
+        // Clear cat pill
+        if (e.target.closest('.js-clear-cat-filter')) {
+          currentFilters.category = 'all';
+          document.querySelectorAll('.js-cat-filter').forEach(b => {
+            if (b.dataset.cat === 'all') b.classList.add('active', 'fw-bold', 'text-accent');
+            else b.classList.remove('active', 'fw-bold', 'text-accent');
+          });
+          renderCatalog();
+          return;
+        }
+
+        // Clear price pill
+        if (e.target.closest('.js-clear-price-filter')) {
+          currentFilters.minPrice = null;
+          currentFilters.maxPrice = null;
+          const minIn = document.getElementById('minPriceInput');
+          const maxIn = document.getElementById('maxPriceInput');
+          if (minIn) minIn.value = '';
+          if (maxIn) maxIn.value = '';
+          renderCatalog();
+          return;
+        }
+
+        // Clear all filters pill
+        if (e.target.closest('.js-clear-all-filters') || e.target.id === 'resetEmptyStateBtn') {
+          currentFilters = {
+            category: 'all',
+            brands: [],
+            minPrice: null,
+            maxPrice: null,
+            search: '',
+            sortBy: 'featured',
+            wishlistOnly: false
+          };
+          document.querySelectorAll('.header-search-input').forEach(input => input.value = '');
+          window.history.replaceState({}, '', window.location.pathname);
+          renderCatalog();
+          return;
+        }
+      });
+
+      // Sort Select
+      const sortSelect = document.getElementById('sortSelect');
+      if (sortSelect) {
+        sortSelect.addEventListener('change', () => {
+          currentFilters.sortBy = sortSelect.value;
+          renderCatalog();
+        });
+      }
+
+      // Price filter desktop
+      const applyPriceBtn = document.getElementById('applyPriceBtn');
+      if (applyPriceBtn) {
+        applyPriceBtn.addEventListener('click', () => {
+          currentFilters.minPrice = document.getElementById('minPriceInput').value || null;
+          currentFilters.maxPrice = document.getElementById('maxPriceInput').value || null;
+          renderCatalog();
+        });
+      }
+
+      // Brand checkboxes
+      document.body.addEventListener('change', (e) => {
+        if (e.target.classList.contains('js-brand-checkbox')) {
+          const checked = Array.from(document.querySelectorAll('.js-brand-checkbox:checked')).map(cb => cb.value);
+          currentFilters.brands = checked;
+          renderCatalog();
+        }
+      });
+
+      // Reset button desktop sidebar
+      const resetBtn = document.getElementById('resetFiltersBtnDesktop');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          currentFilters = {
+            category: 'all',
+            brands: [],
+            minPrice: null,
+            maxPrice: null,
+            search: '',
+            sortBy: 'featured',
+            wishlistOnly: false
+          };
+          document.querySelectorAll('.header-search-input').forEach(input => input.value = '');
+          window.history.replaceState({}, '', 'shop.html');
+          renderCatalog();
+        });
+      }
+    }
+  </script>
+</body>
+</html>

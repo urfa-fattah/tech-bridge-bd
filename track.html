@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Cargo Batch Tracker — TechBridge BD</title>
+  <meta name="description" content="চায়না এয়ার কার্গো শিপমেন্ট ব্যাচ লাইভ ট্র্যাকিং। আপনার অর্ডারের অগ্রগতি ও ফ্লাইট স্ট্যাটাস জানুন।">
+  <link rel="icon" href="assets/img/logo.png">
+
+  <!-- Resource Preconnect & Speed Optimizations -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Dismissable Announcement Pop-Up Capsule -->
+  <!-- Top Dismissable Announcement Pop-Up Capsule -->
+<aside class="announcement-popup" id="announcementPopup" role="alert" aria-label="Official Announcement">
+  <div class="announcement-popup-inner">
+    <span class="announcement-live-indicator" aria-hidden="true"></span>
+    <span class="announcement-text" data-i18n="announcement_text">
+      চীন থেকে সরাসরি আসল টেক প্রি-অর্ডার চলছে! ১২-১৮ দিনে এয়ার কার্গো ডেলিভারি!
+    </span>
+    <a href="offers.html" class="announcement-link" data-i18n="announcement_link">
+      স্পেশাল ৬০% অফার দেখুন <i class="bi bi-arrow-right-short"></i>
+    </a>
+    <button type="button" class="announcement-popup-close" id="announcementCloseBtn" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</aside>
+
+  <!-- Sticky Main Header -->
+    <!-- Sticky Main Header -->
+    <!-- Sticky Main Header -->
+  <!-- Sticky Main Header Component -->
+<header class="site-header">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 gap-3">
+      
+      <!-- Mobile Menu Toggle & Brand Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn btn-outline-custom d-lg-none p-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenuOffcanvas" aria-label="Toggle menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+
+        <a href="index.html" class="header-brand">
+          <img src="assets/img/logo.png" alt="TechBridge BD Logo" class="brand-logo-img">
+          <div class="brand-text-wrap">
+            <span class="brand-name">Tech<span>Bridge</span></span>
+            <span class="brand-subtitle d-block">China Direct Pre-Order</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Search Bar with Live Auto-Complete Dropdown -->
+      <div class="header-search-container d-none d-md-block">
+        <input type="text" class="header-search-input" placeholder="কিবোর্ড, মাউস, অডিও, স্মার্ট গ্যাজেট খুঁজুন..." data-i18n-placeholder="search_placeholder" aria-label="Search tech products">
+        <button type="button" class="header-search-btn" aria-label="Search submit">
+          <i class="bi bi-search"></i>
+        </button>
+        <div class="live-search-dropdown" id="globalLiveSearchDropdown"></div>
+      </div>
+
+      <!-- Header Actions & Utilities -->
+      <div class="d-flex align-items-center gap-2">
+        
+        <!-- Theme Toggle (Light / Dark) -->
+        <button type="button" class="nav-utility-btn js-theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+          <span class="js-theme-label d-none d-xl-inline" data-i18n="theme">Dark</span>
+        </button>
+
+        <!-- Language Switcher (BN / EN) -->
+        <button type="button" class="nav-utility-btn js-lang-toggle" aria-label="Toggle Language" title="Change Language (বাংলা / English)">
+          <i class="bi bi-translate"></i>
+          <span class="js-lang-label">EN</span>
+        </button>
+
+        <!-- Wishlist -->
+        <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="Wishlist" title="পছন্দের তালিকা">
+          <i class="bi bi-heart"></i>
+          <span class="header-action-badge wishlist-badge-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Cart (Order List) -->
+        <a href="cart.html" class="header-action-btn" aria-label="Cart" title="অর্ডার লিস্ট">
+          <i class="bi bi-bag"></i>
+          <span class="header-action-badge cart-badge-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Direct WhatsApp Helpline -->
+        <a href="https://wa.me/8801933407672" target="_blank" class="header-action-btn text-whatsapp d-none d-sm-flex" aria-label="WhatsApp Helpline" title="WhatsApp 01933407672">
+          <i class="bi bi-whatsapp fs-5"></i>
+          <span class="d-none d-lg-inline fw-bold">01933-407672</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Search Bar (under header on small screens) -->
+    <div class="header-search-container d-md-none pb-2">
+      <input type="text" class="header-search-input" placeholder="কিবোর্ড, মাউস, অডিও, স্মার্ট গ্যাজেট..." data-i18n-placeholder="search_placeholder" aria-label="Search tech products mobile">
+      <button type="button" class="header-search-btn" aria-label="Search submit">
+        <i class="bi bi-search"></i>
+      </button>
+      <div class="live-search-dropdown"></div>
+    </div>
+  </div>
+
+  <!-- Secondary Desktop Sub-Navbar -->
+  <nav class="sub-navbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <a href="shop.html" class="category-toggle-btn text-white text-decoration-none">
+          <i class="bi bi-grid-fill"></i> <span data-i18n="nav_shop">সকল প্রোডাক্ট</span>
+        </a>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">হোম</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html" data-i18n="nav_shop">সকল প্রোডাক্ট</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-bold" href="offers.html"><i class="bi bi-fire text-danger"></i> <span data-i18n="nav_offers">৬০% অফার</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="request.html" data-i18n="nav_request">কাস্টম রিকোয়েস্ট</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html" data-i18n="nav_how">কীভাবে কাজ করে</a></li>
+          <li class="nav-item"><a class="nav-link" href="track.html" data-i18n="nav_track">ট্র্যাক শিপমেন্ট</a></li>
+          <li class="nav-item"><a class="nav-link" href="founders.html" data-i18n="nav_founders">প্রতিষ্ঠাতা ও দল</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">আমাদের সম্পর্কে</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">যোগাযোগ</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center gap-3 text-white-50 small pe-2">
+        <span><i class="bi bi-shield-check text-warning me-1"></i> <span data-i18n="guarantee">১০০% অথেনটিক টেক</span></span>
+        <span><i class="bi bi-airplane text-info me-1"></i> <span data-i18n="eta_days">১২-১৮ দিনে এয়ার কার্গো</span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Floating WhatsApp Action Button Component -->
+<a href="https://wa.me/8801933407672" target="_blank" class="floating-whatsapp-btn pulse-whatsapp" aria-label="Chat on WhatsApp" title="WhatsApp 01933-407672">
+  <i class="bi bi-whatsapp"></i>
+</a>
+</header>
+
+  <!-- Main Container -->
+  <main class="container my-4 my-lg-5">
+    
+    <div class="text-center mb-5">
+      <span class="badge-custom badge-preorder mb-2">Live Flight Milestone Monitor</span>
+      <h1 class="h2 fw-bold">চায়না এয়ার কার্গো শিপমেন্ট ট্র্যাকার</h1>
+      <p class="text-muted mx-auto" style="max-width: 600px;">
+        আপনার প্রি-অর্ডারটি বর্তমানে শেনঝেন হাব, আন্তর্জাতিক ফ্লাইট নাকি ঢাকা বিমানবন্দরে কাস্টমস ক্লিয়ারেন্সে আছে তা লাইভ ট্র্যাক করুন।
+      </p>
+    </div>
+
+    <!-- Batch Search Box -->
+    <div class="card-custom p-4 bg-white mx-auto mb-5" style="max-width: 600px;">
+      <label for="batchSearchInput" class="form-label fw-bold small text-muted text-uppercase">ব্যাচ কোড বা মোবাইল নম্বর দিন:</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="batchSearchInput" placeholder="e.g. BATCH-2026-10-25" value="BATCH-2026-10-25">
+        <button class="btn btn-primary-custom" type="button" id="batchSearchBtn">
+          <i class="bi bi-search"></i> ট্র্যাক করুন
+        </button>
+      </div>
+      <div class="d-flex gap-2 mt-2">
+        <small class="text-muted">কুইক সিলেক্ট:</small>
+        <button type="button" class="btn btn-link btn-sm p-0 small text-decoration-none js-quick-batch" data-batch="BATCH-2026-10-25">Batch #84 (বর্তমান)</button>
+        <span class="text-muted">•</span>
+        <button type="button" class="btn btn-link btn-sm p-0 small text-decoration-none js-quick-batch" data-batch="BATCH-2026-10-15">Batch #83 (ফ্লাইটে)</button>
+        <span class="text-muted">•</span>
+        <button type="button" class="btn btn-link btn-sm p-0 small text-decoration-none js-quick-batch" data-batch="BATCH-2026-10-05">Batch #82 (ডেলিভারড)</button>
+      </div>
+    </div>
+
+    <!-- Active Batch Details Result Container -->
+    <div id="batchResultContainer" class="mb-5">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- All Recent Shipment Batches History -->
+    <div class="card-custom p-4 bg-white">
+      <h4 class="fw-bold mb-3">সাম্প্রতিক সকল কার্গো ব্যাচ হিস্ট্রি</h4>
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>ব্যাচ নম্বর</th>
+              <th>কাট-অফ তারিখ</th>
+              <th>ফ্লাইট ডেট</th>
+              <th>আনুমানিক আগমন</th>
+              <th>বর্তমান স্ট্যাটাস</th>
+              <th>অ্যাকশন</th>
+            </tr>
+          </thead>
+          <tbody id="allBatchesTableBody">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+    <!-- Global Unified Footer -->
+  <!-- Global Unified Footer Component -->
+<footer class="bg-primary-dark text-white pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row g-4 pb-4 border-bottom border-secondary">
+      
+      <!-- Col 1: Brand Info & Socials -->
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="assets/img/logo.png" alt="TechBridge BD" class="brand-logo-img" style="width: 44px; height: 44px;">
+          <div>
+            <h4 class="h5 mb-0 fw-bold text-white">Tech<span class="text-accent">Bridge</span> BD</h4>
+            <small class="text-white-50">Direct China Tech Pre-Order Hub</small>
+          </div>
+        </div>
+        <p class="text-white-50 small mb-3" data-i18n="footer_desc">
+          আমরা চীন দেশের অফিসিয়াল ব্র্যান্ড ফ্ল্যাগশিপ স্টোর থেকে আসল টেক প্রোডাক্ট সংগ্রহ করে সরাসরি এয়ার কার্গো শিপমেন্টে বাংলাদেশে পৌঁছে দিই। সম্পূর্ণ স্বচ্ছ প্রাইসিং ও জিরো হিডেন ফি।
+        </p>
+        <div class="d-flex gap-2">
+          <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://wa.me/8801933407672" target="_blank" class="btn btn-success btn-sm rounded-circle p-2" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="col-6 col-lg-2">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_quick_links">প্রয়োজনীয় লিংক</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 text-white-50">
+          <li><a href="shop.html" class="text-decoration-none text-white-50" data-i18n="nav_shop">সকল প্রোডাক্ট</a></li>
+          <li><a href="offers.html" class="text-decoration-none text-warning fw-bold"><i class="bi bi-fire text-danger"></i> <span data-i18n="nav_offers">৬০% স্পেশাল অফার</span></a></li>
+          <li><a href="request.html" class="text-decoration-none text-white-50" data-i18n="nav_request">কাস্টম প্রোডাক্ট রিকোয়েস্ট</a></li>
+          <li><a href="how-it-works.html" class="text-decoration-none text-white-50" data-i18n="nav_how">কীভাবে কাজ করে</a></li>
+          <li><a href="track.html" class="text-decoration-none text-white-50" data-i18n="nav_track">শিপমেন্ট ট্র্যাকিং</a></li>
+          <li><a href="cart.html" class="text-decoration-none text-white-50" data-i18n="cart">অর্ডার লিস্ট (কার্ট)</a></li>
+          <li><a href="founders.html" class="text-decoration-none text-white-50" data-i18n="nav_founders">প্রতিষ্ঠাতা ও নেতৃত্ব</a></li>
+          <li><a href="about.html" class="text-decoration-none text-white-50" data-i18n="nav_about">আমাদের সম্পর্কে</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Policies -->
+      <div class="col-6 col-lg-2">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_policies">পলিসি ও শর্তাবলী</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 text-white-50">
+          <li><a href="policy/pre-order.html" class="text-decoration-none text-white-50" data-i18n="policy_preorder">প্রি-অর্ডার পলিসি</a></li>
+          <li><a href="policy/refund.html" class="text-decoration-none text-white-50" data-i18n="policy_refund">রিফান্ড ও রিপ্লেসমেন্ট</a></li>
+          <li><a href="policy/shipping.html" class="text-decoration-none text-white-50" data-i18n="policy_shipping">শিপিং ও কাস্টমস গাইড</a></li>
+          <li><a href="policy/privacy.html" class="text-decoration-none text-white-50" data-i18n="policy_privacy">প্রাইভেসি পলিসি</a></li>
+          <li><a href="contact.html" class="text-decoration-none text-white-50" data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Office -->
+      <div class="col-lg-4">
+        <h5 class="h6 fw-bold text-accent mb-3" data-i18n="footer_contact">যোগাযোগের ঠিকানা</h5>
+        <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2">
+          <li><i class="bi bi-geo-alt-fill text-warning me-2"></i> <span data-i18n="footer_address">Suite 408, Level 4, Multiplan Center, New Elephant Road, Dhaka-1205</span></li>
+          <li><i class="bi bi-telephone-fill text-warning me-2"></i> +880 1933-407672</li>
+          <li><i class="bi bi-whatsapp text-whatsapp me-2"></i> +880 1933-407672 (WhatsApp Order Desk)</li>
+          <li><i class="bi bi-clock-fill text-warning me-2"></i> <span data-i18n="footer_hours">শনি - বৃহস্পতি: সকাল ১০টা – রাত ৯টা</span></li>
+        </ul>
+
+        <div class="mt-3 p-3 rounded-3 bg-white bg-opacity-10">
+          <span class="small fw-bold d-block text-white mb-2" data-i18n="footer_payment"><i class="bi bi-credit-card-2-front"></i> পেমেন্ট মেথড (৪০% অ্যাডভান্স):</span>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge bg-light text-dark">bKash (Merchant)</span>
+            <span class="badge bg-light text-dark">Nagad</span>
+            <span class="badge bg-light text-dark">Visa</span>
+            <span class="badge bg-light text-dark">Mastercard</span>
+            <span class="badge bg-light text-dark">SSLCOMMERZ</span>
+            <span class="badge bg-success text-white">60% COD Balance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar with Founders Mention -->
+    <div class="pt-4 text-center text-white-50 small">
+      <p class="mb-1" data-i18n="founder_title">
+        প্রতিষ্ঠাতা ও প্রধান ডিজাইনার: <strong>উরফা হাসান ফাত্তাহ</strong> | সহ-প্রতিষ্ঠাতা ও অপারেশনস: <strong>শফিউর রহমান</strong>
+      </p>
+      <p class="mb-0">
+        &copy; 2026 <strong>TechBridge BD</strong>. <span data-i18n="footer_rights">সর্বস্বত্ব সংরক্ষিত।</span> Direct China Tech Pre-Order Ecosystem.
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Fixed Mobile Bottom Navigation Component -->
+<nav class="mobile-bottom-nav">
+  <a href="index.html" class="mobile-nav-item">
+    <i class="bi bi-house-door"></i>
+    <span data-i18n="nav_home">হোম</span>
+  </a>
+  <a href="shop.html" class="mobile-nav-item">
+    <i class="bi bi-grid-fill"></i>
+    <span data-i18n="nav_shop">শপ</span>
+  </a>
+  <a href="https://wa.me/8801933407672" target="_blank" class="mobile-nav-whatsapp-center" aria-label="Order on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="offers.html" class="mobile-nav-item text-danger">
+    <i class="bi bi-fire text-danger"></i>
+    <span data-i18n="nav_offers">৬০% অফার</span>
+  </a>
+  <a href="cart.html" class="mobile-nav-item">
+    <i class="bi bi-bag"></i>
+    <span data-i18n="cart">কার্ট</span>
+    <span class="nav-badge cart-badge-count" style="display: none;">0</span>
+  </a>
+</nav>
+
+  <!-- Mobile Offcanvas Navigation Menu -->
+  <!-- Mobile Offcanvas Navigation Menu Component -->
+<!-- Mobile Offcanvas Navigation Menu Component -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenuOffcanvas" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header bg-primary-dark text-white">
+    <div class="d-flex align-items-center gap-2">
+      <img src="assets/img/logo.png" alt="TechBridge BD Logo" class="brand-logo-img" style="width: 34px; height: 34px;">
+      <div>
+        <h5 class="offcanvas-title mb-0 fw-bold" id="mobileMenuLabel">Tech<span class="text-accent">Bridge</span></h5>
+        <small class="text-white-50" style="font-size: 0.7rem;">China Direct Pre-Order</small>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column justify-content-between">
+    <div>
+      <!-- Main Nav Links -->
+      <ul class="offcanvas-nav-list mb-3">
+        <li>
+          <a class="offcanvas-nav-link" href="index.html">
+            <i class="bi bi-house-door"></i>
+            <span data-i18n="nav_home">হোম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="shop.html">
+            <i class="bi bi-grid-fill"></i>
+            <span data-i18n="nav_shop">সকল প্রি-অর্ডার প্রোডাক্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link text-danger" href="offers.html">
+            <i class="bi bi-fire text-danger"></i>
+            <span data-i18n="nav_offers">স্পেশাল ৬০% অফার</span>
+            <span class="badge bg-danger text-white ms-auto">HOT</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="cart.html">
+            <i class="bi bi-bag"></i>
+            <span data-i18n="cart">কার্ট (অর্ডার তালিকা)</span>
+            <span class="badge bg-primary ms-auto cart-badge-count" style="display: none;">0</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="request.html">
+            <i class="bi bi-link-45deg"></i>
+            <span data-i18n="nav_request">কাস্টম রিকোয়েস্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="track.html">
+            <i class="bi bi-broadcast"></i>
+            <span data-i18n="nav_track">লাইভ শিপমেন্ট ট্র্যাকার</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="how-it-works.html">
+            <i class="bi bi-question-circle"></i>
+            <span data-i18n="nav_how">কীভাবে প্রি-অর্ডার কাজ করে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="pre-order.html">
+            <i class="bi bi-file-text"></i>
+            <span data-i18n="policy_preorder">প্রি-অর্ডার পলিসি ও নিয়ম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="founders.html">
+            <i class="bi bi-people"></i>
+            <span data-i18n="nav_founders">প্রতিষ্ঠাতা ও দল (Founders)</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="about.html">
+            <i class="bi bi-info-circle"></i>
+            <span data-i18n="nav_about">আমাদের সম্পর্কে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="contact.html">
+            <i class="bi bi-geo-alt"></i>
+            <span data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Policies Sub-Section -->
+      <div class="pt-2 pb-1 border-top">
+        <small class="text-uppercase text-muted fw-bold mb-2 d-block px-2" style="font-size: 0.68rem;">আইনি ও অন্যান্য পলিসি</small>
+        <div class="d-flex flex-wrap gap-2 px-2">
+          <a href="policy/refund.html" class="small text-muted text-decoration-none">রিফান্ড পলিসি</a>
+          <span class="text-muted">•</span>
+          <a href="policy/shipping.html" class="small text-muted text-decoration-none">শিপিং গাইড</a>
+          <span class="text-muted">•</span>
+          <a href="policy/privacy.html" class="small text-muted text-decoration-none">প্রাইভেসি</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme / Language & WhatsApp Helpbox -->
+    <div>
+      <div class="d-flex gap-2 my-3 pt-3 border-top">
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-theme-toggle">
+          <i class="bi bi-moon-stars-fill me-1"></i> <span class="js-theme-label">Theme</span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-lang-toggle">
+          <i class="bi bi-translate me-1"></i> <span class="js-lang-label">Language</span>
+        </button>
+      </div>
+
+      <div class="offcanvas-helpbox">
+        <p class="small text-muted mb-2">সরাসরি কথা বলতে চান?</p>
+        <a href="https://wa.me/8801933407672" target="_blank" class="btn btn-whatsapp w-100 py-2 fw-semibold">
+          <i class="bi bi-whatsapp"></i> 01933-407672
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- App Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module">
+    import { DataService } from './assets/js/dataService.js';
+    import { formatDate } from './assets/js/config.js';
+    import { WhatsAppService } from './assets/js/whatsapp.js';
+
+    let allShipments = [];
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      allShipments = await DataService.getShipments();
+
+      const defaultBatchId = 'BATCH-2026-10-25';
+      renderSelectedBatch(defaultBatchId);
+      renderAllBatchesTable();
+      setupTrackerEvents();
+    });
+
+    function renderSelectedBatch(batchId) {
+      const batch = allShipments.find(s => s.batchId === batchId) || allShipments[0];
+      const container = document.getElementById('batchResultContainer');
+      if (!batch || !container) return;
+
+      const progressPercent = (batch.currentMilestone / batch.milestones.length) * 100;
+
+      const stepsHTML = batch.milestones.map((m, index) => {
+        let stepClass = "";
+        let circleContent = index + 1;
+        if (m.done) {
+          stepClass = "completed";
+          circleContent = '<i class="bi bi-check-lg"></i>';
+        }
+        if (m.current) {
+          stepClass = "active";
+          circleContent = index + 1;
+        }
+
+        return `
+          <div class="stepper-step ${stepClass}">
+            <div class="stepper-circle">${circleContent}</div>
+            <span class="stepper-label">${m.title}</span>
+          </div>
+        `;
+      }).join('');
+
+      container.innerHTML = `
+        <div class="batch-card">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+            <div>
+              <span class="batch-badge mb-2"><i class="bi bi-airplane"></i> ${batch.title}</span>
+              <h3 class="h3 mb-0 text-white fw-bold">${batch.batchId}</h3>
+              <div class="text-white-50 small mt-1">
+                ফ্লাইট প্রস্থান: ${formatDate(batch.departureDate)} • আনুমানিক অবতরণ: ${formatDate(batch.arrivalEstimate)}
+              </div>
+            </div>
+            <div class="text-end">
+              <span class="badge ${batch.status === 'delivered' ? 'bg-success' : 'bg-warning text-dark'} fs-6 px-3 py-2 fw-bold">
+                ${batch.statusLabelBn || batch.statusLabel}
+              </span>
+              ${batch.slotsLeft > 0 ? `<div class="text-white-50 small mt-1">বাকি বুকিং স্লট: ${batch.slotsLeft}টি</div>` : ''}
+            </div>
+          </div>
+
+          <div class="stepper-container">
+            <div class="stepper-progress-bar">
+              <div class="stepper-progress-fill" style="width: ${progressPercent}%;"></div>
+            </div>
+            ${stepsHTML}
+          </div>
+
+          <div class="p-3 rounded bg-white bg-opacity-10 mt-4 d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="small text-white">
+              <i class="bi bi-info-circle text-warning me-2"></i> ${batch.notes}
+            </div>
+            <button type="button" class="btn btn-whatsapp btn-sm fw-bold" id="askBatchWhatsAppBtn" data-batch="${batch.batchId}">
+              <i class="bi bi-whatsapp"></i> এই ব্যাচের আপডেট হোয়াটসঅ্যাপে জানুন
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderAllBatchesTable() {
+      const tbody = document.getElementById('allBatchesTableBody');
+      if (!tbody) return;
+
+      tbody.innerHTML = allShipments.map(s => `
+        <tr>
+          <td class="fw-bold">${s.title} <span class="badge bg-light text-muted border">${s.batchId}</span></td>
+          <td class="small text-muted">${formatDate(s.orderCutoff)}</td>
+          <td class="small text-muted">${formatDate(s.departureDate)}</td>
+          <td class="small fw-semibold text-primary">${formatDate(s.arrivalEstimate)}</td>
+          <td>
+            <span class="badge ${s.status === 'delivered' ? 'bg-success-subtle text-success' : 'bg-warning-subtle text-warning'} fw-bold">
+              ${s.statusLabelBn || s.statusLabel}
+            </span>
+          </td>
+          <td>
+            <button type="button" class="btn btn-outline-primary btn-sm py-1 js-view-batch" data-batch="${s.batchId}">
+              ভিউ
+            </button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function setupTrackerEvents() {
+      document.getElementById('batchSearchBtn').addEventListener('click', () => {
+        const val = document.getElementById('batchSearchInput').value.trim();
+        renderSelectedBatch(val);
+      });
+
+      document.body.addEventListener('click', (e) => {
+        const quickBtn = e.target.closest('.js-quick-batch') || e.target.closest('.js-view-batch');
+        if (quickBtn) {
+          const batchId = quickBtn.dataset.batch;
+          document.getElementById('batchSearchInput').value = batchId;
+          renderSelectedBatch(batchId);
+          window.scrollTo({ top: 200, behavior: 'smooth' });
+          return;
+        }
+
+        const askBtn = e.target.closest('#askBatchWhatsAppBtn');
+        if (askBtn) {
+          const bId = askBtn.dataset.batch;
+          WhatsAppService.generalInquiry(`Inquiry about shipment batch ${bId}`);
+          return;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
