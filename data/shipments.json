@@ -1,0 +1,68 @@
+[
+  {
+    "batchId": "BATCH-2026-10-25",
+    "title": "Air Cargo Batch #84",
+    "orderCutoff": "2026-10-25",
+    "departureDate": "2026-10-27",
+    "arrivalEstimate": "2026-11-04",
+    "status": "booking_open",
+    "statusLabel": "Pre-Order Booking Open",
+    "statusLabelBn": "প্রি-অর্ডার বুকিং চলছে",
+    "totalSlots": 50,
+    "slotsBooked": 38,
+    "slotsLeft": 12,
+    "currentMilestone": 1,
+    "milestones": [
+      { "id": 1, "title": "Pre-Order Open", "desc": "Bookings accepted with 40% advance", "done": true, "current": true },
+      { "id": 2, "title": "Shenzhen Sorting", "desc": "Direct factory pickup & inspection", "done": false, "current": false },
+      { "id": 3, "title": "Air Cargo Transit", "desc": "Direct flight to Dhaka (DAC)", "done": false, "current": false },
+      { "id": 4, "title": "Dhaka Customs Clear", "desc": "Official duty & port clearance", "done": false, "current": false },
+      { "id": 5, "title": "Doorstep Delivery", "desc": "Steadfast / Pathao courier delivery", "done": false, "current": false }
+    ],
+    "notes": "Guaranteed arrival within 12-16 days. Zero hidden customs fee."
+  },
+  {
+    "batchId": "BATCH-2026-10-15",
+    "title": "Air Cargo Batch #83",
+    "orderCutoff": "2026-10-15",
+    "departureDate": "2026-10-17",
+    "arrivalEstimate": "2026-10-26",
+    "status": "air_cargo",
+    "statusLabel": "In Flight Transit to Dhaka",
+    "statusLabelBn": "ঢাকা ফ্লাইটে ট্রানজিটে আছে",
+    "totalSlots": 50,
+    "slotsBooked": 50,
+    "slotsLeft": 0,
+    "currentMilestone": 3,
+    "milestones": [
+      { "id": 1, "title": "Pre-Order Open", "desc": "Batch booked successfully", "done": true, "current": false },
+      { "id": 2, "title": "Shenzhen Sorting", "desc": "Packed at Shenzhen warehouse", "done": true, "current": false },
+      { "id": 3, "title": "Air Cargo Transit", "desc": "Air freight en route to Hazrat Shahjalal Airport", "done": true, "current": true },
+      { "id": 4, "title": "Dhaka Customs Clear", "desc": "Customs inspection pending", "done": false, "current": false },
+      { "id": 5, "title": "Doorstep Delivery", "desc": "Ready for courier dispatch", "done": false, "current": false }
+    ],
+    "notes": "Estimated landing at Dhaka Cargo terminal on 24 Oct."
+  },
+  {
+    "batchId": "BATCH-2026-10-05",
+    "title": "Air Cargo Batch #82",
+    "orderCutoff": "2026-10-05",
+    "departureDate": "2026-10-08",
+    "arrivalEstimate": "2026-10-18",
+    "status": "delivered",
+    "statusLabel": "100% Delivered to Customers",
+    "statusLabelBn": "সফলভাবে ডেলিভারি সম্পন্ন",
+    "totalSlots": 45,
+    "slotsBooked": 45,
+    "slotsLeft": 0,
+    "currentMilestone": 5,
+    "milestones": [
+      { "id": 1, "title": "Pre-Order Open", "desc": "Completed", "done": true, "current": false },
+      { "id": 2, "title": "Shenzhen Sorting", "desc": "Completed", "done": true, "current": false },
+      { "id": 3, "title": "Air Cargo Transit", "desc": "Completed", "done": true, "current": false },
+      { "id": 4, "title": "Dhaka Customs Clear", "desc": "Cleared smoothly", "done": true, "current": false },
+      { "id": 5, "title": "Doorstep Delivery", "desc": "45 parcels delivered", "done": true, "current": true }
+    ],
+    "notes": "All orders delivered in average 11.4 days!"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "deal-mega-60",
+    "title": "Mega China Factory Clearance — Flat 60% Discount Pre-Order",
+    "titleBn": "মেগা চায়না ফ্যাক্টরি ক্লিয়ারেন্স — ফ্ল্যাট ৬০% ডিসকাউন্ট প্রি-অর্ডার",
+    "badge": "FLAT 60% OFF",
+    "discount": "Flat 60% Off vs Local Market",
+    "discountPercent": 60,
+    "endDate": "2026-10-31T23:59:59",
+    "batchId": "BATCH-2026-10-25",
+    "productIds": ["off-0001", "off-0002", "off-0003", "off-0004", "off-0005", "off-0006"],
+    "description": "Exclusive ShenZhen manufacturer bulk clearance before quarterly inventory refresh. Directly imported with 100% authenticity and air cargo express delivery.",
+    "descriptionBn": "শেনঝেন ফ্যাক্টরির কোয়ার্টারলি ইনভেন্টরি রিফ্রেশের বিশেষ সরাসরি স্টক ক্লিয়ারেন্স। ১০০% আসল ও অফিসিয়াল ওয়ারেন্টি সহ মাত্র ৪০% অ্যাডভান্সে প্রি-অর্ডার করুন।"
+  },
+  {
+    "id": "deal-oct-flash",
+    "title": "October China Air Cargo Super Drop",
+    "titleBn": "অক্টোবর চায়না এয়ার কার্গো সুপার ড্রপ",
+    "badge": "Flash Pre-Order Deal",
+    "discount": "Up to 35% Off vs Local Store",
+    "discountPercent": 35,
+    "endDate": "2026-10-25T23:59:59",
+    "batchId": "BATCH-2026-10-25",
+    "productIds": ["aud-0001", "gam-0001", "wat-0001", "pow-0001", "pc-0001"],
+    "description": "Pre-order top-rated tech from China before flight cargo cutoff date. Guaranteed authentic with zero customs charges.",
+    "descriptionBn": "ফ্লাইট কার্গো কাট-অফের পূর্বে শীর্ষ রেটেড গ্যাজেট প্রি-অর্ডার করুন সম্পূর্ণ কাস্টমস ফি ছাড়াই।"
+  }
+]

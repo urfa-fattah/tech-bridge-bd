@@ -1,0 +1,43 @@
+{
+  "storeName": "TechBridge BD",
+  "tagline": "China theke direct, original tech sera dame",
+  "taglineEn": "Direct from China, authentic tech at smart pre-order prices",
+  "whatsapp": "8801933407672",
+  "phone": "+880 1933-407672",
+  "phoneRaw": "01933407672",
+  "email": "support@techbridgebd.com",
+  "address": "Suite 408, Level 4, Multiplan Center, New Elephant Road, Dhaka-1205",
+  "currency": "৳",
+  "currencyCode": "BDT",
+  "advancePercent": 40,
+  "defaultEtaDays": [12, 18],
+  "usdToBdt": 125,
+  "cnyToBdt": 17.5,
+  "shippingRateAirPerKg": 950,
+  "payment": ["bKash (Merchant)", "Nagad", "City Bank", "BRAC Bank", "Cash on Delivery (Remaining 60% after BD arrival)"],
+  "social": {
+    "facebook": "https://facebook.com",
+    "facebookGroup": "https://facebook.com/groups",
+    "instagram": "https://instagram.com",
+    "youtube": "https://youtube.com"
+  },
+  "leadership": {
+    "founder": {
+      "name": "Urfa Hasan Fattah",
+      "title": "Founder & Lead UX/UI Designer & System Architect"
+    },
+    "coFounder": {
+      "name": "Shofiur Rahman",
+      "title": "Co-Founder & Head of Global Operations"
+    }
+  },
+  "announcement": "✈️ Next China Air Cargo Shipment: 25 Oct Batch — Booking closes in 3 days! 100% Original Guarantee & Secure Advance.",
+  "activeBatchId": "BATCH-2026-10-25",
+  "features": {
+    "enablePaymentGateway": true,
+    "enableDarkMode": true,
+    "enableLanguageTranslation": true,
+    "enableWishlist": true,
+    "enableBatchTracker": true
+  }
+}

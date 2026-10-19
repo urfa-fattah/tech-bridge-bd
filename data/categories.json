@@ -1,0 +1,102 @@
+[
+  {
+    "id": "audio",
+    "name": "Audio & Earbuds",
+    "nameBn": "অডিও ও ইয়ারবাডস",
+    "icon": "bi-headphones",
+    "slug": "audio",
+    "order": 1,
+    "featured": true,
+    "subcategories": [
+      { "id": "tws-earbuds", "name": "TWS Earbuds", "nameBn": "টিডব্লিউএস ইয়ারবাডস" },
+      { "id": "iem-earphones", "name": "Audiophile IEMs", "nameBn": "অডিওফাইল আইইএম" },
+      { "id": "over-ear-headphones", "name": "Over-Ear Headphones", "nameBn": "হেডফোন" },
+      { "id": "bluetooth-speakers", "name": "Bluetooth Speakers", "nameBn": "স্পিকার" }
+    ]
+  },
+  {
+    "id": "smart-watch",
+    "name": "Smart Watches",
+    "nameBn": "স্মার্ট ওয়াচ",
+    "icon": "bi-smartwatch",
+    "slug": "smart-watch",
+    "order": 2,
+    "featured": true,
+    "subcategories": [
+      { "id": "amoled-watch", "name": "AMOLED Watches", "nameBn": "অ্যামোলেড ওয়াচ" },
+      { "id": "sports-band", "name": "Fitness Bands", "nameBn": "ফিটনেস ব্যান্ড" },
+      { "id": "watch-straps", "name": "Straps & Accessories", "nameBn": "স্ট্র্যাপস ও এক্সেসরিজ" }
+    ]
+  },
+  {
+    "id": "gaming",
+    "name": "Gaming Gear",
+    "nameBn": "গেমিং গিয়ার",
+    "icon": "bi-controller",
+    "slug": "gaming",
+    "order": 3,
+    "featured": true,
+    "subcategories": [
+      { "id": "mechanical-keyboards", "name": "Mechanical Keyboards", "nameBn": "মেকানিক্যাল কিবোর্ড" },
+      { "id": "gaming-mice", "name": "Lightweight Gaming Mice", "nameBn": "গেমিং মাউস" },
+      { "id": "gamepads", "name": "Wireless Gamepads", "nameBn": "ওয়্যারলেস কন্ট্রোলার" },
+      { "id": "mousepads", "name": "Speed Mousepads", "nameBn": "মাউসপ্যাড" }
+    ]
+  },
+  {
+    "id": "pc-parts",
+    "name": "PC Hardware",
+    "nameBn": "পিসি পার্টস",
+    "icon": "bi-cpu",
+    "slug": "pc-parts",
+    "order": 4,
+    "featured": true,
+    "subcategories": [
+      { "id": "cpu-coolers", "name": "Air & AIO Coolers", "nameBn": "সিপিইউ কুলার" },
+      { "id": "nvme-ssd", "name": "Gen4 NVMe SSDs", "nameBn": "এনভিএমই এসএসডি" },
+      { "id": "case-fans", "name": "ARGB Case Fans", "nameBn": "কেস ফ্যান" },
+      { "id": "thermal-paste", "name": "Thermal Paste & Modding", "nameBn": "থার্মাল পেস্ট" }
+    ]
+  },
+  {
+    "id": "power",
+    "name": "GaN Chargers & Power",
+    "nameBn": "চার্জার ও পাওয়ার ব্যাংক",
+    "icon": "bi-battery-charging",
+    "slug": "power",
+    "order": 5,
+    "featured": true,
+    "subcategories": [
+      { "id": "gan-chargers", "name": "GaN Fast Chargers (65W-140W)", "nameBn": "জিএএন ফাস্ট চার্জার" },
+      { "id": "power-banks", "name": "Laptop Power Banks", "nameBn": "পাওয়ার ব্যাংক" },
+      { "id": "fast-cables", "name": "Type-C Braided Cables", "nameBn": "টাইপ-সি কেবল" }
+    ]
+  },
+  {
+    "id": "mobile-accessories",
+    "name": "Mobile Accessories",
+    "nameBn": "মোবাইল এক্সেসরিজ",
+    "icon": "bi-phone",
+    "slug": "mobile-accessories",
+    "order": 6,
+    "featured": true,
+    "subcategories": [
+      { "id": "magnetic-stands", "name": "MagSafe & Desktop Stands", "nameBn": "ম্যাগসেফ স্ট্যান্ড" },
+      { "id": "camera-lenses", "name": "Mobile Photography", "nameBn": "মোবাইল ক্যামেরা গিয়ার" },
+      { "id": "phone-coolers", "name": "Semiconductor Phone Coolers", "nameBn": "মোবাইল কুলার" }
+    ]
+  },
+  {
+    "id": "smart-home",
+    "name": "Smart Lifestyle",
+    "nameBn": "স্মার্ট হোম ও লাইফস্টাইল",
+    "icon": "bi-house-gear",
+    "slug": "smart-home",
+    "order": 7,
+    "featured": false,
+    "subcategories": [
+      { "id": "smart-lighting", "name": "RGB Screen Bars & Lights", "nameBn": "স্ক্রিনবার ও লাইট" },
+      { "id": "cleaning-tools", "name": "Electronic Cleaning Kits", "nameBn": "ক্লিনিং কিটস" }
+    ]
+  }
+]

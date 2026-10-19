@@ -1,0 +1,67 @@
+[
+  {
+    "id": "rev-101",
+    "productId": "aud-0001",
+    "productName": "Moondrop Space Travel TWS",
+    "name": "Tanvir Ahmed",
+    "location": "Dhanmondi, Dhaka",
+    "rating": 5,
+    "date": "10 Oct 2026",
+    "verified": true,
+    "batchId": "BATCH-2026-10-05",
+    "comment": "Local market e 3,200 taka chacchilo, ekhane pre-order e matro 2,250 takay peyechi! Exactly 13 diner moddhe parcel chole ashche. Sound quality top notch!",
+    "commentEn": "Local stores asked 3,200 BDT, got it here via pre-order for just 2,250 BDT! Arrived in 13 days. Pure sound quality!"
+  },
+  {
+    "id": "rev-102",
+    "productId": "gam-0001",
+    "productName": "Attack Shark X3 Superlight Mouse",
+    "name": "Nafis Fuad",
+    "location": "Agrabad, Chattogram",
+    "rating": 5,
+    "date": "06 Oct 2026",
+    "verified": true,
+    "batchId": "BATCH-2026-09-25",
+    "comment": "Initially 40% advance dite ektu voy lagchilo, but WhatsApp e regularly status update disilo (China packaging -> Dhaka Airport). Shotti authentic 49g mouse pelam, highly recommended!",
+    "commentEn": "Was slightly hesitant about the 40% advance, but the WhatsApp team kept sending milestone updates. Got the authentic 49g mouse, 100% recommended!"
+  },
+  {
+    "id": "rev-103",
+    "productId": "wat-0001",
+    "productName": "Haylou Solar Pro AMOLED Watch",
+    "name": "Sayeed Hasan",
+    "location": "Zindabazar, Sylhet",
+    "rating": 5,
+    "date": "02 Oct 2026",
+    "verified": true,
+    "batchId": "BATCH-2026-09-25",
+    "comment": "Display brightness ar Bluetooth calling darun. Packed condition asol brand sealed chilo. Shobcheye bhalo lagche hidden customs charge chilo na.",
+    "commentEn": "Super vibrant AMOLED display and clear BT calling. Authentic sealed box. Best part: zero extra customs fees at delivery."
+  },
+  {
+    "id": "rev-104",
+    "productId": "pc-0001",
+    "productName": "Thermalright Peerless Assassin 120 SE",
+    "name": "Arif Chowdhury",
+    "location": "Rajshahi",
+    "rating": 5,
+    "date": "28 Sep 2026",
+    "verified": true,
+    "batchId": "BATCH-2026-09-15",
+    "comment": "Ryzen 7 7700X e use korchi, load temperature 72C er upore jay e na. Local e stock pawa jachilo na, TechBridge er through te pre-order kore easily peyechi.",
+    "commentEn": "Using it on Ryzen 7 7700X, temps never exceed 72C under heavy load. Out of stock locally, TechBridge imported it seamlessly."
+  },
+  {
+    "id": "rev-105",
+    "productId": "pow-0001",
+    "productName": "Baseus 65W GaN5 Pro Fast Charger",
+    "name": "Mahmudul Hasan",
+    "location": "Uttara, Dhaka",
+    "rating": 5,
+    "date": "22 Sep 2026",
+    "verified": true,
+    "batchId": "BATCH-2026-09-15",
+    "comment": "Laptop + iPhone eksathe fast charge hocche. Heavy weight genuine charger, heating issue nai.",
+    "commentEn": "Powers both MacBook and iPhone simultaneously. Genuine Baseus product without heating issues."
+  }
+]

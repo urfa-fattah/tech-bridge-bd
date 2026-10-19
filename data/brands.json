@@ -1,0 +1,12 @@
+[
+  { "id": "moondrop", "name": "Moondrop", "country": "China", "tier": "Audiophile Legend" },
+  { "id": "qcy", "name": "QCY", "country": "China", "tier": "Budget Audio King" },
+  { "id": "haylou", "name": "Haylou", "country": "China", "tier": "Smart Wearable Leader" },
+  { "id": "baseus", "name": "Baseus", "country": "China", "tier": "Premium Accessories" },
+  { "id": "ugreen", "name": "Ugreen", "country": "China", "tier": "GaN & Cable Specialists" },
+  { "id": "attack-shark", "name": "Attack Shark", "country": "China", "tier": "Pro Esports Mice & Keys" },
+  { "id": "royal-kludge", "name": "Royal Kludge (RK)", "country": "China", "tier": "Custom Mechanical Keyboards" },
+  { "id": "thermalright", "name": "Thermalright", "country": "China", "tier": "Benchmark CPU Coolers" },
+  { "id": "amazfit", "name": "Amazfit", "country": "China", "tier": "Health & GPS Wearables" },
+  { "id": "8bitdo", "name": "8BitDo", "country": "China", "tier": "Flagship Wireless Controllers" }
+]
