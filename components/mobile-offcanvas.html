@@ -1,0 +1,119 @@
+<!-- Mobile Offcanvas Navigation Menu Component -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenuOffcanvas" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header bg-primary-dark text-white">
+    <div class="d-flex align-items-center gap-2">
+      <img src="assets/img/logo.png" alt="TechBridge BD Logo" class="brand-logo-img" style="width: 34px; height: 34px;">
+      <div>
+        <h5 class="offcanvas-title mb-0 fw-bold" id="mobileMenuLabel">Tech<span class="text-accent">Bridge</span></h5>
+        <small class="text-white-50" style="font-size: 0.7rem;">China Direct Pre-Order</small>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column justify-content-between">
+    <div>
+      <!-- Main Nav Links -->
+      <ul class="offcanvas-nav-list mb-3">
+        <li>
+          <a class="offcanvas-nav-link" href="index.html">
+            <i class="bi bi-house-door"></i>
+            <span data-i18n="nav_home">হোম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="shop.html">
+            <i class="bi bi-grid-fill"></i>
+            <span data-i18n="nav_shop">সকল প্রি-অর্ডার প্রোডাক্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link text-danger" href="offers.html">
+            <i class="bi bi-fire text-danger"></i>
+            <span data-i18n="nav_offers">স্পেশাল ৬০% অফার</span>
+            <span class="badge bg-danger text-white ms-auto">HOT</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="cart.html">
+            <i class="bi bi-bag"></i>
+            <span data-i18n="cart">কার্ট (অর্ডার তালিকা)</span>
+            <span class="badge bg-primary ms-auto cart-badge-count" style="display: none;">0</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="request.html">
+            <i class="bi bi-link-45deg"></i>
+            <span data-i18n="nav_request">কাস্টম রিকোয়েস্ট</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="track.html">
+            <i class="bi bi-broadcast"></i>
+            <span data-i18n="nav_track">লাইভ শিপমেন্ট ট্র্যাকার</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="how-it-works.html">
+            <i class="bi bi-question-circle"></i>
+            <span data-i18n="nav_how">কীভাবে প্রি-অর্ডার কাজ করে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="pre-order.html">
+            <i class="bi bi-file-text"></i>
+            <span data-i18n="policy_preorder">প্রি-অর্ডার পলিসি ও নিয়ম</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="founders.html">
+            <i class="bi bi-people"></i>
+            <span data-i18n="nav_founders">প্রতিষ্ঠাতা ও দল (Founders)</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="about.html">
+            <i class="bi bi-info-circle"></i>
+            <span data-i18n="nav_about">আমাদের সম্পর্কে</span>
+          </a>
+        </li>
+        <li>
+          <a class="offcanvas-nav-link" href="contact.html">
+            <i class="bi bi-geo-alt"></i>
+            <span data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Policies Sub-Section -->
+      <div class="pt-2 pb-1 border-top">
+        <small class="text-uppercase text-muted fw-bold mb-2 d-block px-2" style="font-size: 0.68rem;">আইনি ও অন্যান্য পলিসি</small>
+        <div class="d-flex flex-wrap gap-2 px-2">
+          <a href="policy/refund.html" class="small text-muted text-decoration-none">রিফান্ড পলিসি</a>
+          <span class="text-muted">•</span>
+          <a href="policy/shipping.html" class="small text-muted text-decoration-none">শিপিং গাইড</a>
+          <span class="text-muted">•</span>
+          <a href="policy/privacy.html" class="small text-muted text-decoration-none">প্রাইভেসি</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme / Language & WhatsApp Helpbox -->
+    <div>
+      <div class="d-flex gap-2 my-3 pt-3 border-top">
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-theme-toggle">
+          <i class="bi bi-moon-stars-fill me-1"></i> <span class="js-theme-label">Theme</span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm flex-fill js-lang-toggle">
+          <i class="bi bi-translate me-1"></i> <span class="js-lang-label">Language</span>
+        </button>
+      </div>
+
+      <div class="offcanvas-helpbox">
+        <p class="small text-muted mb-2">সরাসরি কথা বলতে চান?</p>
+        <a href="https://wa.me/8801933407672" target="_blank" class="btn btn-whatsapp w-100 py-2 fw-semibold">
+          <i class="bi bi-whatsapp"></i> 01933-407672
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
